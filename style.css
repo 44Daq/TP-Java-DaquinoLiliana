@@ -1,0 +1,225 @@
+ @media only screen and (min-width:320px) and (max-width: 2048px)
+{
+*{
+    margin:0;
+    padding: 0;
+
+}
+/* ------------------ encabezado --------------- */
+/* OK */
+
+
+header {
+    background-color: rgb(92, 88, 88);
+    display: inline-flex;
+    width: 100%;
+
+}
+.txtConf{
+
+    margin-left: 90px;
+    color: white;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+h2{
+    margin-top: -70px;
+    margin-left: 125px;
+    font-size: large;
+}
+.imagen-logo{
+   margin-block: 20px;
+    height:60px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.txt{
+    color: white;
+    text-align:center;
+    margin-left: 400px;
+    margin-top: -30px;
+}
+.enlace_distint{
+    color: rgb(14, 146, 14);
+
+}
+/*---------------------- sección class="container-conf"  --------------------------*/
+/* OK */
+.contenedor-ba{
+
+    display: inline-flex;
+    /* width:50%;
+    height: 50%; */
+   text-align: right;
+
+}
+.texto-ba{
+    margin-top: 40px;
+    font-size:x-large;
+    color:white;
+   
+}
+.centrado-ba{
+    margin-top: 60px;
+    position: absolute;
+    color:white;
+    top: 50%;
+    left: 10%;
+ 
+}
+.confBsAs{
+   
+    font-size: xx-large;
+    text-align: right;
+    margin-right: 10px;
+ 
+}
+
+ .botones{
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+}  
+.btn-orador{
+
+    margin-left: 10px;
+    border-radius: 5px;
+    border-color: white;
+    background-color: transparent;
+    color:white;
+    font-size:large ;
+
+
+}
+.btn-tickets
+{
+    margin-left: 50px;
+    border-radius: 5px;
+    background-color: rgb(14, 146, 14);
+    border-color: transparent;
+    color:white ;
+    font-size: large;
+
+
+    padding: 10;
+
+}
+
+/* --------------conoce a los oradores ---------*/
+/* OK */
+h6{
+    margin-top: 10px;
+    text-align: center;
+
+}
+h4{
+    text-align: center;
+    font-size: x-large;
+}
+/*--------------container-orador------------------*/
+
+.container-oradores{
+ display: inline-flex;
+ text-align: left;
+    margin-right:150px;
+    margin-left:150px;
+    width: 620px;
+    height: 80vh;
+
+}
+
+.btn-yellow{
+    background-color: rgb(243, 243, 51);
+    color:rgb(59, 58, 58);
+    border-radius: 5px;
+    border-color: transparent;
+
+}
+.btn-cyan{
+    background-color: cyan;
+    color:white;
+    border-radius: 5px;
+    border-color: transparent;
+}
+.btn-gris{
+    background-color: gray;
+    color:white;
+    border-radius: 5px;
+    border-color: transparent;
+}
+.btn-rojo{
+    background-color: rgb(179, 37, 37);
+    color:white;
+    border-radius: 5px;
+    border-color: transparent;
+}
+/* -----------------------cajas-------------------- */
+.container-col{
+    display: inline-flex;
+    height: 100vh;
+    margin-right: 0px;
+    margin-left: 0px;
+    /* place-items: center; */
+     
+}
+
+.caja2-4{
+   background-color: rgb(78, 75, 75);
+   color: white;
+   width: 630px;
+   height: 500px;
+   text-align: justify;
+ 
+}
+.btn-hono{
+    border-radius: 5px;
+    border-color: white;
+    background-color: transparent;
+    color:white;
+    font-size: x-large;
+
+}
+
+/* ------------formulario----------- */
+
+ .tex-cent
+ {    height: 100vh;
+    text-align:center;
+    font-size: medium;
+ }
+
+.input{
+    display: inline-flex;
+    
+
+}
+.coment{
+    color:  rgb(138, 135, 135);
+    font-size: large;
+}
+
+.btn-enviar{
+    background-color: rgb(23, 201, 38);
+    color:white;
+    border-radius: 5px;
+    border-color: transparent;
+    padding-bottom:  5px;
+    padding-top: 5px;
+    padding-left: 400px;
+    padding-right: 400px;
+
+}
+
+/* .-----------footer ---------*/
+
+footer{
+  
+    height: 10vh;
+   background-color: rgb(42, 90, 122);
+   color:white;
+    width: 100%;
+    font-size: large;
+    text-align: center;
+
+}
+}
