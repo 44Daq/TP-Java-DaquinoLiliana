@@ -58,7 +58,7 @@ h2{
     margin-top: 40px;
     font-size:x-large;
     color:white;
-   
+
 }
 .centrado-ba{
     margin-top: 60px;
@@ -66,24 +66,24 @@ h2{
     color:white;
     top: 50%;
     left: 10%;
- 
+
 }
 .confBsAs{
-   
+
     font-size: xx-large;
     text-align: right;
     margin-right: 10px;
- 
+
 }
 
  .botones{
     margin-right: 10px;
     margin-bottom: 10px;
 
-}  
+}
 .btn-orador{
 
-    margin-left: 10px; 
+    margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
     border-radius: 5px;
@@ -125,11 +125,11 @@ h4{
  display: inline-flex;
  text-align: left;
     /* margin-right:150px;*/
-    margin-left:40px; 
+    margin-left:40px;
     width: 620px;
     /* height: 80vh; */
     height: 650px;
-    
+
 
 }
 
@@ -165,7 +165,7 @@ h4{
     margin-right: 0px;
     margin-left: 0px;
     /* place-items: center; */
-     
+
 }
 
 .caja2-4{
@@ -174,7 +174,7 @@ h4{
    /* width: 630px;
    height: 500px; */
    text-align: justify;
- 
+
 }
 .btn-hono{
     border-radius: 5px;
@@ -195,15 +195,23 @@ h4{
 
 .input{
     display: inline-flex;
-  
+
+
 
 }
 .coment{
     color:  rgb(138, 135, 135);
     font-size: large;
 }
+.pieTxt
+{  margin-top: 0px;
+    text-align: left;
+    margin-left:80px;
+
+}
 
 .btn-enviar{
+    margin-top: 15px;
     background-color: rgb(23, 201, 38);
     color:white;
     border-radius: 5px;
@@ -218,7 +226,7 @@ h4{
 /* .-----------footer ---------*/
 
 footer{
-  
+
     height: 10vh;
    background-color: rgb(42, 90, 122);
    color:white;
@@ -233,14 +241,37 @@ footer{
 
 .container-tickets
 {
-   
+
     display: inline-flex;
     text-align: center;
     /* margin-right:50px; */
-    margin-left:200px; 
-    width: 620px;
+    margin-left:180px;
+    width: 650px;
     /* height: 80vh; */
-   
+
+
+}
+.btn-estudiante
+{
+ border-color: rgb(65, 151, 221);
+ margin-left:2px;
+ /* margin-right:3px; */
+ background-color: white;
+
+}
+.btn-trainee
+{
+ border-color: rgb(65, 151, 221);
+ margin-left:2px;
+ /* margin-right:3px; */
+ background-color: white;
+}
+.btn-junior
+{
+    border-color: rgb(219, 125, 16);
+    margin-left:2px;
+    /* margin-right:3px; */
+    background-color: white;
 
 }
 
@@ -249,7 +280,12 @@ h5{
 }
 .input{
     padding-bottom: 5px;
+    margin-left: 10PX;
+
+
 }
+
+
 .btn-pagar{
     background-color: rgb(117, 177, 192);
     color:white;
@@ -257,16 +293,13 @@ h5{
     border-color: transparent;
     padding-bottom:  5px;
     padding-top: 5px;
-    padding-left: 200px;
-    padding-right: 200px;
-
+    margin-left: 10PX;
+    text-align: left;
 }
 
 .btn-dos
 { display: inline-flex;
-    
-    margin-right: 10px;
-    margin-bottom: 10px;
+
 
 
 }
@@ -277,8 +310,8 @@ h5{
     border-color: transparent;
     padding-bottom:  5px;
     padding-top: 5px;
-    padding-left: 100px;
-    padding-right:100px;
+    margin-left: 10PX;
+
 
 }
 .btn-resumen{
@@ -288,8 +321,7 @@ h5{
     border-color: transparent;
     padding-bottom:  5px;
     padding-top: 5px;
-    padding-left: 100px;
-    padding-right:100px;
+    margin-left:10PX;
 
 }
 .tex-cent{
