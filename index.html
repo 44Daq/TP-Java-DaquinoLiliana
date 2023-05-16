@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Conf Bs As</title>
     <!-- servicio de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="only screen and (min-width:320px) and (max-width: 2048px) " href="estilos.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <link rel="stylesheet" media="only screen and (min-width:320px) and (max-width: 2048px) " href="estilos.css"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
   
     
     
@@ -25,13 +26,16 @@
        <lu href="#">  Los oradores    &nbsp</lu>
        <lu href="#">EL lugar y la fecha  &nbsp</lu>
        <lu href="#">Conviertete en Orador &nbsp </lu>
-       <lu class="enlace_distint" href="./page/comprarTicket.html">Comprar ticket</lu>
+       <lu class="enlace_distint" href="./page/comprarTicket.html" >Comprar ticket</lu>
+       
+     
        </div>
     </header>
+    
      
 <section >
     <div class="contenedor-ba">
-        <img src="ba1.jpg" width="1262" height="900" >
+        <img src="ba1.jpg" width="1000" height="800" >
         <div class="centrado-ba">
         <div class="confBsAs"><b>Conf Bs As</b></div>
         <div class="texto-ba">
@@ -43,8 +47,11 @@
            </b>   </pre></p>
     <div class="botones">
     <button class="btn-orador" >Quiero ser orador </button>
-    <button class="btn-tickets" >Comprar Tickets</button>       
-            
+    <button class="btn-ticket" type="button"> <script src="ticket.html"> </script>     
+        <form action="ticket.html">
+        <input type="submit" value="Comprar Tickets" />
+        </form>   
+    </button>  
     </div>
 </section>   
       
@@ -110,7 +117,7 @@
 
 <section  class="container-col" id="col">         
         <div class="caja1-4">
-        <img src="honolulu.jpg" width="630" height="500">
+        <img src="honolulu.jpg" width="500" height="400">
         </div> 
         <div class="caja2-4">
          <h3>Bs As - Octubre</h3>
@@ -122,24 +129,28 @@
             <button class="btn-hono" >Conocé más</button>          
 </section>
 
-<section class="tex-cent"   place-items="center">CONVIÉRTETE EN UN
+<div class="tex-cent" place-items="center">CONVIÉRTETE EN UN
     <h3>ORADOR</h3>
     <p>Anótate como orador para dar una charla  ignite. Cuéntanos de qué quieres hablar!</p>    
-    <div class="input" > <input type="nombre" name="nombre" placeholder="Nombre"></div>
+    <div class="input" > <input type="nombre" name="nombre" placeholder="Nombre" ></div>
     <div class="input"> <input type="apellido" name="apellido" placeholder="Apellido"></div>
     </p><!-- imput se utiliza para ingresar datos-->
           
-    <textarea class="coment" name="comentarios" rows="6" cols="100">   Sobre qué quieres hablar?</textarea>
-              
+    <textarea class="coment" name="comentarios" rows="5" cols="100">   Sobre qué quieres hablar?</textarea>
+    <br></br>
+    <lo> Recuerda incluir un título para tu charla</lo>
        
     <button class="btn-enviar" >Enviar</button>      
-</section>  
+</div>  
+<div>
 <footer>
     <lo>Preguntas frecuentes  &nbsp &nbsp</lo>
+    <lo>Contáctanos  &nbsp &nbsp</lo>
+    <lo>Prensa  &nbsp &nbsp</lo>
     <lo>Conferencias  &nbsp &nbsp</lo>
     <lo>Términos y condiciones  &nbsp &nbsp</lo>
     <lo>Privacidad  &nbsp &nbsp</lo>
     <lo>Estudiantes</lo>           
-</footer>              
+</footer>  </div>            
 </body>
 </html> 

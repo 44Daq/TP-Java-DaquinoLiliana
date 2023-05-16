@@ -1,6 +1,7 @@
- @media only screen and (min-width:320px) and (max-width: 2048px)
+@media only screen and (min-width:320px) and (max-width: 2048px)
 {
 *{
+
     margin:0;
     padding: 0;
 
@@ -24,19 +25,19 @@ header {
 }
 h2{
     margin-top: -70px;
-    margin-left: 125px;
+    margin-left: 60px;
     font-size: large;
 }
 .imagen-logo{
    margin-block: 20px;
     height:60px;
-    margin-left: 30px;
+    margin-left:-40px;
     margin-top: 10px;
 }
 .txt{
     color: white;
     text-align:center;
-    margin-left: 400px;
+    margin-left: 220px;
     margin-top: -30px;
 }
 .enlace_distint{
@@ -76,13 +77,15 @@ h2{
 }
 
  .botones{
-  margin-right: 10px;
-  margin-bottom: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 
 }  
 .btn-orador{
 
-    margin-left: 10px;
+    margin-left: 10px; 
+    margin-right: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
     border-color: white;
     background-color: transparent;
@@ -91,7 +94,8 @@ h2{
 
 
 }
-.btn-tickets
+.btn-ticket
+
 {
     margin-left: 50px;
     border-radius: 5px;
@@ -99,11 +103,10 @@ h2{
     border-color: transparent;
     color:white ;
     font-size: large;
-
-
     padding: 10;
 
 }
+
 
 /* --------------conoce a los oradores ---------*/
 /* OK */
@@ -121,10 +124,12 @@ h4{
 .container-oradores{
  display: inline-flex;
  text-align: left;
-    margin-right:150px;
-    margin-left:150px;
+    /* margin-right:150px;*/
+    margin-left:40px; 
     width: 620px;
-    height: 80vh;
+    /* height: 80vh; */
+    height: 650px;
+    
 
 }
 
@@ -156,7 +161,7 @@ h4{
 /* -----------------------cajas-------------------- */
 .container-col{
     display: inline-flex;
-    height: 100vh;
+    /* height: 100vh; */
     margin-right: 0px;
     margin-left: 0px;
     /* place-items: center; */
@@ -166,8 +171,8 @@ h4{
 .caja2-4{
    background-color: rgb(78, 75, 75);
    color: white;
-   width: 630px;
-   height: 500px;
+   /* width: 630px;
+   height: 500px; */
    text-align: justify;
  
 }
@@ -190,7 +195,7 @@ h4{
 
 .input{
     display: inline-flex;
-    
+  
 
 }
 .coment{
@@ -220,6 +225,74 @@ footer{
     width: 100%;
     font-size: large;
     text-align: center;
+    bottom: 0px;
 
+}
+/* ---------------------------------------------------------------*/
+/* -------estilo de ticket ------*/
+
+.container-tickets
+{
+   
+    display: inline-flex;
+    text-align: center;
+    /* margin-right:50px; */
+    margin-left:200px; 
+    width: 620px;
+    /* height: 80vh; */
+   
+
+}
+
+h5{
+    color:black;
+}
+.input{
+    padding-bottom: 5px;
+}
+.btn-pagar{
+    background-color: rgb(117, 177, 192);
+    color:white;
+    border-radius: 5px;
+    border-color: transparent;
+    padding-bottom:  5px;
+    padding-top: 5px;
+    padding-left: 200px;
+    padding-right: 200px;
+
+}
+
+.btn-dos
+{ display: inline-flex;
+    
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+
+}
+.btn-borrar{
+    background-color: rgb(81, 170, 88);
+    color:white;
+    border-radius: 5px;
+    border-color: transparent;
+    padding-bottom:  5px;
+    padding-top: 5px;
+    padding-left: 100px;
+    padding-right:100px;
+
+}
+.btn-resumen{
+    background-color: rgb(81, 170, 88);
+    color:white;
+    border-radius: 5px;
+    border-color: transparent;
+    padding-bottom:  5px;
+    padding-top: 5px;
+    padding-left: 100px;
+    padding-right:100px;
+
+}
+.tex-cent{
+    height: 400px;
 }
 }
