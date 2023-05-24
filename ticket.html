@@ -29,19 +29,20 @@
     <!-- <div class="col-4" > -->
         <button class="btn-estudiante" alt="Estudiante"  style="width : 230px">
             <!-- <div class="img-thumbnail"> -->
-            <h3>Estudiante</h3>
+            <div style="background-color:  rgb(65, 151, 221);"><h3>Estudiante</h3></div>
             <!-- <div style="justify-self: center;"> -->
             <p >Tienen un descuento</p>
             <p > <b> 80% </b></p>
             <p >*presentar documentación</p>
             </div>
         </button>
+
       
       <!-- <div class="col-4" > -->
    
         <button class="btn-trainee" alt="Trainee"style="width : 230px">
             <!-- <div class="img-thumbnail"> -->
-            <h3>Traine</h3>
+            <div style="background-color:   rgb(6, 141, 51);"><h3>Traine</h3></div>
             <!-- <div style="justify-self: center;"> -->
             <p >Tienen un descuento </p>
             <p > <b> 50% </b></p>
@@ -53,7 +54,7 @@
       
         <button class="btn-junior" alt="Junior" style="width : 230px">
             <!-- <div class="img-thumbnail" > -->
-            <h3>Junior</h3>
+            <div style="background-color:   rgb(219, 125, 16);"><h3>Junior</h3></div>
             <!-- <div style="justify-self: center;"> -->
             <p >Tienen un descuento </p>
             <p > <b> 15% </b></p>
@@ -67,7 +68,7 @@
 
 <section class="tex-cent"   place-items="center">VENTA
             <h3>VALOR DE TICKET $200</h3>
-           
+    <form id="formulario"> 
             <div class="input" > <input type="text" style="width : 325px"name="nombre" placeholder="Nombre" ></div>
             <div class="input"> <input type="text"style="width : 325px"name="apellido" placeholder="Apellido"></div>
            <!-- imput se utiliza para ingresar datos-->
@@ -75,29 +76,31 @@
             <div class="input" > <input type="text" style="width : 670px" name="correo" placeholder="Correo" cols="90"></div>    
           
             <br></br>
-        <div ><p>Cantidad Categoria </p></div>
-        <div class="input" >
+            <div ><p>Cantidad Categoria </p></div>
+            <div class="input" >
             <!-- <p>Cantidad -->
             <input type="cantidad"style="width : 325px" name="cantidad" placeholder="Cantidad" >
-        </div>  
-        <div class="input" >
+            </div>  
+             <div class="input" >
              <!-- <p>Categoria -->
             <select style="width : 325px" name="categoria">
                 <option value="value1">Estudiante</option>
                 <option value="value2">Trainee</option>
                 <option value="value3">Junior</option>
               </select> 
-        </div>
+            </div>
+      
 
         <!-- </div> -->
             <br></br>
 
             <button class="btn-pagar" style="width : 670px" >Total a Pagar: $</button>  
             <br></br>
-    <div  class="btn-dos">
-            <div button class="btn-borrar" style="width : 325px" >Borrar</button> </div> &nbsp&nbsp
+        <div  class="btn-dos">
+            <div button class="btn-borrar" id="borrar" style="width : 325px" >Borrar</button> </div> &nbsp&nbsp
             <div button class="btn-resumen"style="width : 325px">Resumen</button> </div>       
-    </div>
+        </div>
+    </form>  
 </section>
 <footer>
          <lo>Preguntas frecuentes  &nbsp &nbsp</lo>
