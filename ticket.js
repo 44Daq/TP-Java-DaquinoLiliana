@@ -31,3 +31,4 @@
 document.getElementById("borrar").addEventListener("click"())
 
 document.getElementById("formulario").reset();
+
