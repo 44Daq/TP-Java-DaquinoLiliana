@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Tickets</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <div class="txtConf">
+         <img class="imagen-logo" src="codoacodo.png" alt="logo" >
+         <h2>Conf Bs As</h2>
+         <div class="txt">
+         <lu href="#"><b> La Conferencia  &nbsp </b></lu>
+            <lu href="#">  Los oradores    &nbsp</lu>
+         <lu href="#">EL lugar y la fecha  &nbsp</lu>
+         <lu href="#">Conviertete en Orador &nbsp </lu>
+         <lu class="enlace_distint" href="./page/comprarTicket.html" >Comprar ticket</lu>
+       
+          </div>
+        </header>
+  <br></br>
+
+<section class="container-tickets" id="ticket" >
+    <!-- <div class="col-4" > -->
+        <button class="btn-estudiante" alt="Estudiante"  style="width : 230px">
+            <!-- <div class="img-thumbnail"> -->
+            <div style="background-color:  rgb(65, 151, 221);"><h3>Estudiante</h3></div>
+            <!-- <div style="justify-self: center;"> -->
+            <p >Tienen un descuento</p>
+            <p > <b> 80% </b></p>
+            <p >*presentar documentación</p>
+            </div>
+        </button>
+
+      
+      <!-- <div class="col-4" > -->
+   
+        <button class="btn-trainee" alt="Trainee"style="width : 230px">
+            <!-- <div class="img-thumbnail"> -->
+            <div style="background-color:   rgb(6, 141, 51);"><h3>Traine</h3></div>
+            <!-- <div style="justify-self: center;"> -->
+            <p >Tienen un descuento </p>
+            <p > <b> 50% </b></p>
+            <p >*presentar documentación</p>
+            </div>
+        </button>
+    <!-- <section>   -->
+        <!-- <div class="col-4"> -->
+      
+        <button class="btn-junior" alt="Junior" style="width : 230px">
+            <!-- <div class="img-thumbnail" > -->
+            <div style="background-color:   rgb(219, 125, 16);"><h3>Junior</h3></div>
+            <!-- <div style="justify-self: center;"> -->
+            <p >Tienen un descuento </p>
+            <p > <b> 15% </b></p>
+            <p > *presentar documentación</p>
+            </div>
+            
+        </button>
+
+</section>  
+
+
+<section class="tex-cent"   place-items="center">VENTA
+            <h3>VALOR DE TICKET $200</h3>
+    <form id="formulario"> 
+            <div class="input" > <input type="text" style="width : 325px"name="nombre" placeholder="Nombre" ></div>
+            <div class="input"> <input type="text"style="width : 325px"name="apellido" placeholder="Apellido"></div>
+           <!-- imput se utiliza para ingresar datos-->
+           <br></br>
+            <div class="input" > <input type="text" style="width : 660px" name="correo" placeholder="Correo" cols="90"></div>    
+          
+            <br></br>
+            <div ><p>Cantidad Categoria </p></div>
+            <div class="input" >
+            <!-- <p>Cantidad -->
+            <input type="cantidad"style="width : 325px" name="cantidad" placeholder="Cantidad" >
+            </div>  
+             <div class="input" >
+             <!-- <p>Categoria -->
+            <select style="width : 325px" name="categoria">
+                <option value="value1">Elija una opción</option>
+                <option value="value1">Estudiante</option>
+                <option value="value2">Trainee</option>
+                <option value="value3">Junior</option>
+              </select> 
+            </div>
+      
+
+        <!-- </div> -->
+            <br></br>
+
+            <button class="btn-pagar" style="width : 670px" >Total a Pagar: $</button>  
+            <br></br>
+        <div  class="btn-dos">
+            <button class="btn-borrar" id="borrar" style="width : 325px" >Borrar</button> &nbsp&nbsp
+            <button class="btn-resumen"id="Resumen"style="width : 325px">Resumen</button>      
+        </div>
+    </form>  
+</section>
+<footer>
+         <lo>Preguntas frecuentes  &nbsp &nbsp</lo>
+         <lo>Contáctanos  &nbsp &nbsp</lo>
+         <lo>Prensa  &nbsp &nbsp</lo>
+         <lo>Conferencias  &nbsp &nbsp</lo>
+         <lo>Términos y condiciones  &nbsp &nbsp</lo>
+         <lo>Privacidad  &nbsp &nbsp</lo>
+         <lo>Estudiantes</lo>           
+</footer>        
+</body>
+</html>

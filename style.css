@@ -1,6 +1,7 @@
- @media only screen and (min-width:320px) and (max-width: 2048px)
+@media only screen and (min-width:320px) and (max-width: 2048px)
 {
 *{
+
     margin:0;
     padding: 0;
 
@@ -24,19 +25,19 @@ header {
 }
 h2{
     margin-top: -70px;
-    margin-left: 125px;
+    margin-left: 60px;
     font-size: large;
 }
 .imagen-logo{
    margin-block: 20px;
     height:60px;
-    margin-left: 30px;
+    margin-left:-40px;
     margin-top: 10px;
 }
 .txt{
     color: white;
     text-align:center;
-    margin-left: 400px;
+    margin-left: 220px;
     margin-top: -30px;
 }
 .enlace_distint{
@@ -57,7 +58,7 @@ h2{
     margin-top: 40px;
     font-size:x-large;
     color:white;
-   
+
 }
 .centrado-ba{
     margin-top: 60px;
@@ -65,24 +66,21 @@ h2{
     color:white;
     top: 50%;
     left: 10%;
- 
+
 }
 .confBsAs{
-   
+
     font-size: xx-large;
     text-align: right;
     margin-right: 10px;
- 
+
 }
 
- .botones{
-  margin-right: 10px;
-  margin-bottom: 10px;
-
-}  
 .btn-orador{
 
     margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
     border-radius: 5px;
     border-color: white;
     background-color: transparent;
@@ -91,19 +89,19 @@ h2{
 
 
 }
-.btn-tickets
+.btn-ticket
 {
+    background-color: rgb(14, 146, 14);
+    color:white ;  
     margin-left: 50px;
     border-radius: 5px;
-    background-color: rgb(14, 146, 14);
-    border-color: transparent;
-    color:white ;
+    border-color: rgb(14, 146, 14); 
     font-size: large;
-
-
     padding: 10;
 
 }
+
+
 
 /* --------------conoce a los oradores ---------*/
 /* OK */
@@ -121,10 +119,12 @@ h4{
 .container-oradores{
  display: inline-flex;
  text-align: left;
-    margin-right:150px;
-    margin-left:150px;
+    /* margin-right:150px;*/
+    margin-left:40px;
     width: 620px;
-    height: 80vh;
+    /* height: 80vh; */
+    height: 650px;
+
 
 }
 
@@ -156,20 +156,27 @@ h4{
 /* -----------------------cajas-------------------- */
 .container-col{
     display: inline-flex;
-    height: 100vh;
+    /* height: 100vh; */
     margin-right: 0px;
     margin-left: 0px;
     /* place-items: center; */
-     
+
 }
 
 .caja2-4{
+  
    background-color: rgb(78, 75, 75);
    color: white;
-   width: 630px;
-   height: 500px;
-   text-align: justify;
- 
+   /* width: 630px;
+   height: 500px; */
+  
+}
+.oct-text
+{
+    text-align: justify;
+    position: relative;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 .btn-hono{
     border-radius: 5px;
@@ -183,22 +190,30 @@ h4{
 /* ------------formulario----------- */
 
  .tex-cent
- {    height: 100vh;
+ {  height: 100vh;
     text-align:center;
     font-size: medium;
+
  }
 
 .input{
     display: inline-flex;
-    
+    margin-left: 1px;
 
 }
 .coment{
     color:  rgb(138, 135, 135);
     font-size: large;
 }
+.pieTxt
+{  margin-top: 0px;
+    text-align: left;
+    margin-left:80px;
+
+}
 
 .btn-enviar{
+    margin-top: 15px;
     background-color: rgb(23, 201, 38);
     color:white;
     border-radius: 5px;
@@ -213,13 +228,93 @@ h4{
 /* .-----------footer ---------*/
 
 footer{
-  
+
     height: 10vh;
    background-color: rgb(42, 90, 122);
    color:white;
     width: 100%;
     font-size: large;
     text-align: center;
+    bottom: 0px;
 
+}
+/* ---------------------------------------------------------------*/
+/* ----------------------estilo de ticket ------------------------*/
+/* ---------------------------------------------------------------*/
+.container-tickets
+{
+
+    display: inline-flex;
+    text-align: center;
+    margin-left:180px;
+    width: 650px;
+}
+
+.btn-estudiante
+{
+ border-color: rgb(65, 151, 221);
+ margin-left:2px;
+ background-color: white;
+
+}
+.btn-trainee
+{
+ border-color: rgb(6, 141, 51);
+ margin-left:2px;
+ background-color: white;
+}
+.btn-junior
+{
+    border-color: rgb(219, 125, 16);
+    margin-left:2px;
+    background-color: white;
+
+}
+
+h5{
+    color:black;
+}
+
+.input{
+    padding-bottom: 5px;
+    margin-left: 5PX;
+}
+
+
+.btn-pagar{
+    background-color: rgb(117, 177, 192);
+    color:white;
+    border-radius: 5px;
+    border-color: transparent;
+    padding-bottom:  5px;
+    padding-top: 5px;
+    margin-left: 10PX;
+    text-align: left;
+}
+
+
+.btn-borrar{
+    background-color: rgb(81, 170, 88);
+    color:white;
+    border-radius: 5px;
+    border-color: transparent;
+    padding-bottom:  5px;
+    padding-top: 5px;
+    margin-left: 10PX;
+
+
+}
+.btn-resumen{
+    background-color: rgb(81, 170, 88);
+    color:white;
+    border-radius: 5px;
+    border-color: transparent;
+    padding-bottom:  5px;
+    padding-top: 5px;
+    margin-left:10PX;
+
+}
+.tex-cent{
+    height: 400px;
 }
 }
