@@ -1,34 +1,49 @@
- console.log('Ver JS')
-// // alert(' Sguro???')
 
-// var ticket= 200;
-// var estudiante=80;
-// var trainee= 50;
-// var junior= 15;
 
-//  var cantidad = document.getElmentById("cantidad");
-// // cantidad= prompt(cantidad())
-// var total= cantidad * precio;
+// ------------declaración de variables --------------
+var precio= 200;
+var estudiante= 0.80;
+var trainee= 0.50;
+var junior= 0.15;
+var cantidad;
 
-// switch (totalFinal)
-// {
 
+
+ document.getElmentById("cantidad");
+
+//  cantidad= prompt(cantidad())
+
+ var totalf= (cantidad * precio);
+ console.log((totalf))
+
+//  switch (totalFinal){
 //     case estudiante:
-//     total= cantidad * estudiante;
-//     break
+//       pagar= totalf * estudiante;
+//       break
 //     case trainee:
-//     total= cantidad * trainee;
-//     break
+//       pagar= totalf * trainee;
+//       break
 //     case junior:
-//     total= cantidad * junior;
-//     break
-//  default:
+//      pagar= totalf * junior;
+//      break
+
+//     default: 
 //     document.write("Selecione un botón correcto")
-
-
+//     console.log("totalFinal"("click"("resumen")))
 // }
 
-document.getElementById("borrar").addEventListener("click"())
+ 
+// var cantidad= document.getElmentById("cantidad");
+// var resumen= document.getElmentById("resumen");
+// var pagar= document.getElmentById("pagar");
 
-document.getElementById("formulario").reset();
+// function resumen(){
+//   console.log(categoria.value)
+//   console.log(cantidad.value)
+//   pagar.innerHTML = cantidad.value
+  // document.getElementById("borrar").addEventListener("click"())
+  // document.getElementById("formulario").reset();
+// }
+
+
 

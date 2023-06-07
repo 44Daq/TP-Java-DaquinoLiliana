@@ -8,27 +8,27 @@
     <title>Tickets</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="ticket.js"></script>
 </head>
 <body>
-        <header>
-            <div class="txtConf">
-         <img class="imagen-logo" src="codoacodo.png" alt="logo" >
-         <h2>Conf Bs As</h2>
-         <div class="txt">
-         <lu href="#"><b> La Conferencia  &nbsp </b></lu>
-            <lu href="#">  Los oradores    &nbsp</lu>
-         <lu href="#">EL lugar y la fecha  &nbsp</lu>
-         <lu href="#">Conviertete en Orador &nbsp </lu>
+    <header>
+        <div class="txt-Conf">
+         <img class="imagen-logo" src="codoacodo.png" alt="logo" width="100px" height="70px">  </div>
+          <h2 style="text-align:left;  margin-left: -10px; margin-top: 20px;">Conf Bs As</h2>   
+        <div class="txt">
+         <lu href="#"><b> La Conferencia  </b></lu>
+            <lu href="#">  Los oradores    </lu>
+         <lu href="#">EL lugar y la fecha </lu>
+         <lu href="#">Conviertete en Orador</lu>
          <lu class="enlace_distint" href="./page/comprarTicket.html" >Comprar ticket</lu>
        
-          </div>
-        </header>
+        </div>
+    </header>
   <br></br>
 
 <section class="container-tickets" id="ticket" >
-    <!-- <div class="col-4" > -->
-        <button class="btn-estudiante" alt="Estudiante"  style="width : 230px">
-            <!-- <div class="img-thumbnail"> -->
+        <button class="btn-estudiante" alt="Estudiante"  id= "estudiante"style="width : 230px">
+
             <div style="background-color:  rgb(65, 151, 221);"><h3>Estudiante</h3></div>
             <!-- <div style="justify-self: center;"> -->
             <p >Tienen un descuento</p>
@@ -36,12 +36,8 @@
             <p >*presentar documentación</p>
             </div>
         </button>
-
-      
-      <!-- <div class="col-4" > -->
    
         <button class="btn-trainee" alt="Trainee"style="width : 230px">
-            <!-- <div class="img-thumbnail"> -->
             <div style="background-color:   rgb(6, 141, 51);"><h3>Traine</h3></div>
             <!-- <div style="justify-self: center;"> -->
             <p >Tienen un descuento </p>
@@ -49,11 +45,9 @@
             <p >*presentar documentación</p>
             </div>
         </button>
-    <!-- <section>   -->
-        <!-- <div class="col-4"> -->
+   
       
         <button class="btn-junior" alt="Junior" style="width : 230px">
-            <!-- <div class="img-thumbnail" > -->
             <div style="background-color:   rgb(219, 125, 16);"><h3>Junior</h3></div>
             <!-- <div style="justify-self: center;"> -->
             <p >Tienen un descuento </p>
@@ -76,18 +70,18 @@
             <div class="input" > <input type="text" style="width : 660px" name="correo" placeholder="Correo" cols="90"></div>    
           
             <br></br>
-            <div ><p>Cantidad Categoria </p></div>
+            <!-- <div ><p>Cantidad Categoria </p></div> -->
             <div class="input" >
             <!-- <p>Cantidad -->
-            <input type="cantidad"style="width : 325px" name="cantidad" placeholder="Cantidad" >
+            <input type="cantidad" id="cantidad"style="width : 325px" name="cantidad" placeholder="Cantidad" >
             </div>  
-             <div class="input" >
+             <div class="input" id="categoria"name="categoria">
              <!-- <p>Categoria -->
-            <select style="width : 325px" name="categoria">
-                <option value="value1">Elija una opción</option>
-                <option value="value1">Estudiante</option>
-                <option value="value2">Trainee</option>
-                <option value="value3">Junior</option>
+                 <select style="width : 325px" >
+                    <option value="value1">Categoria</option>
+                    <option value="value1" id="estudiante"  onclick="estudiante()">Estudiante</option>
+                    <option value="value2" id="trainee"  onclick="trainee()">Trainee</option>
+                    <option value="value3" id="junior"  onclick="junior()">Junior</option>
               </select> 
             </div>
       
@@ -95,22 +89,26 @@
         <!-- </div> -->
             <br></br>
 
-            <button class="btn-pagar" style="width : 670px" >Total a Pagar: $</button>  
+            <button class="btn-pagar" id="pagar" style="width : 670px" >Total a Pagar: $</button>  
             <br></br>
         <div  class="btn-dos">
             <button class="btn-borrar" id="borrar" style="width : 325px" >Borrar</button> &nbsp&nbsp
-            <button class="btn-resumen"id="Resumen"style="width : 325px">Resumen</button>      
+            <button class="btn-resumen"id="resumen"  onclick="resumen()"style="width : 325px">Resumen</button>      
         </div>
     </form>  
 </section>
-<footer>
-         <lo>Preguntas frecuentes  &nbsp &nbsp</lo>
-         <lo>Contáctanos  &nbsp &nbsp</lo>
-         <lo>Prensa  &nbsp &nbsp</lo>
-         <lo>Conferencias  &nbsp &nbsp</lo>
-         <lo>Términos y condiciones  &nbsp &nbsp</lo>
-         <lo>Privacidad  &nbsp &nbsp</lo>
-         <lo>Estudiantes</lo>           
-</footer>        
+<footer class="container-fluid">
+    <div class="row">
+        <div class="col bg-footer d-flex justify-content-around 
+        aling-items-center">
+            <a >Preguntas <br>frecuentes</a>
+            <a >Contáctanos </a>
+            <a >Prensa </a></a>
+            <a >Términos y <br>condiciones </a>
+            <a >Privacidad  </a>
+            <a >Estudiantes</a>   
+        </div>
+    </div>
+</footer>          
 </body>
 </html>

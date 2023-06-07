@@ -7,100 +7,74 @@
 
 }
 /* ------------------ encabezado --------------- */
-/* OK */
-
-
 header {
     background-color: rgb(92, 88, 88);
     display: inline-flex;
     width: 100%;
-
-}
-.txtConf{
-
-    margin-left: 90px;
     color: white;
-    margin-top: -10px;
-    margin-bottom: 20px;
 }
-h2{
-    margin-top: -70px;
-    margin-left: 60px;
-    font-size: large;
+.h2{
+    text-align:left ;
+    font-size: small;
+
+}
+.txt {
+    text-align:right;
+    font-size: smaller;
+    margin-top: 30px;
+    margin-left: 100px;
 }
 .imagen-logo{
-   margin-block: 20px;
-    height:60px;
-    margin-left:-40px;
-    margin-top: 10px;
-}
-.txt{
-    color: white;
-    text-align:center;
-    margin-left: 220px;
-    margin-top: -30px;
+    margin-left:10px;
 }
 .enlace_distint{
-    color: rgb(14, 146, 14);
+  color: rgb(14, 146, 14);
 
 }
 /*---------------------- sección class="container-conf"  --------------------------*/
-/* OK */
+
 .contenedor-ba{
-
     display: inline-flex;
-    /* width:50%;
-    height: 50%; */
-   text-align: right;
-
-}
-.texto-ba{
-    margin-top: 40px;
-    font-size:x-large;
-    color:white;
-
-}
-.centrado-ba{
-    margin-top: 60px;
-    position: absolute;
-    color:white;
-    top: 50%;
-    left: 10%;
-
-}
-.confBsAs{
-
-    font-size: xx-large;
     text-align: right;
-    margin-right: 10px;
+}
+/* texto de parrafo inicial */
+.texto-ba{
+    margin-top: 20px;
+    font-size:medium;
+    color:white;
+    position: absolute;
+    top: 60%;
+    right:5%;
 
 }
+.con{
+    top: 60%;right:5%;
+    position: absolute;
+    font-size: large;
 
+    /* margin-right: 10px; */
+}
+.dos{
+    /* margin-right:50px; */
+    right:20%;
+    position: absolute;
+}
 .btn-orador{
 
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 90px;
     margin-bottom: 10px;
     border-radius: 5px;
     border-color: white;
     background-color: transparent;
     color:white;
     font-size:large ;
-
-
 }
-.btn-ticket
-{
-    background-color: rgb(14, 146, 14);
-    color:white ;  
-    margin-left: 50px;
-    border-radius: 5px;
-    border-color: rgb(14, 146, 14); 
-    font-size: large;
-    padding: 10;
-
+.btn-tic{
+    right:-50%;
+    position: absolute;
+    margin-top: -40px;
 }
-
 
 
 /* --------------conoce a los oradores ---------*/
@@ -164,12 +138,12 @@ h4{
 }
 
 .caja2-4{
-  
+
    background-color: rgb(78, 75, 75);
    color: white;
    /* width: 630px;
    height: 500px; */
-  
+
 }
 .oct-text
 {
@@ -231,13 +205,15 @@ footer{
 
     height: 10vh;
    background-color: rgb(42, 90, 122);
-   color:white;
+   /* color:white; */
     width: 100%;
-    font-size: large;
+    color:white;
+    font-size: medium;
     text-align: center;
-    bottom: 0px;
 
+    bottom: 0px;
 }
+
 /* ---------------------------------------------------------------*/
 /* ----------------------estilo de ticket ------------------------*/
 /* ---------------------------------------------------------------*/
