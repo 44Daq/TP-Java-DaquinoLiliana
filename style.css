@@ -1,11 +1,17 @@
 @media only screen and (min-width:320px) and (max-width: 2048px)
 {
-*{
+*{box-sizing: border-box;
 
+/* 
     margin:0;
-    padding: 0;
-
+    padding: 0; */
 }
+html, body{
+    height: 100;
+    margin:0;
+    padding: 0; 
+}
+
 /* ------------------ encabezado --------------- */
 header {
     background-color: rgb(92, 88, 88);
@@ -91,16 +97,30 @@ h4{
 /*--------------container-orador------------------*/
 
 .container-oradores{
- display: inline-flex;
+ display: flex;
  text-align: left;
-    /* margin-right:150px;*/
-    margin-left:40px;
-    width: 620px;
-    /* height: 80vh; */
-    height: 650px;
-
+ 
+    justify-content: center;
+    align-items: center;
 
 }
+.jobs{
+    margin-left:4px;
+    margin-right:4px;
+    width: 310px;
+    height: 650px;
+}
+.gates{
+    margin-left:4px;
+    width: 310px;
+    height: 650px;
+}
+.ada{
+    margin-left:4px;
+    width: 310px;
+    height: 650px;
+}
+
 
 .btn-yellow{
     background-color: rgb(243, 243, 51);
@@ -130,20 +150,15 @@ h4{
 /* -----------------------cajas-------------------- */
 .container-col{
     display: inline-flex;
-    /* height: 100vh; */
     margin-right: 0px;
     margin-left: 0px;
-    /* place-items: center; */
-
 }
 
 .caja2-4{
 
    background-color: rgb(78, 75, 75);
    color: white;
-   /* width: 630px;
-   height: 500px; */
-
+  
 }
 .oct-text
 {
@@ -158,7 +173,6 @@ h4{
     background-color: transparent;
     color:white;
     font-size: x-large;
-
 }
 
 /* ------------formulario----------- */
@@ -167,14 +181,13 @@ h4{
  {  height: 100vh;
     text-align:center;
     font-size: medium;
-
  }
 
 .input{
     display: inline-flex;
     margin-left: 1px;
-
 }
+
 .coment{
     color:  rgb(138, 135, 135);
     font-size: large;
@@ -183,7 +196,6 @@ h4{
 {  margin-top: 0px;
     text-align: left;
     margin-left:80px;
-
 }
 
 .btn-enviar{
@@ -196,13 +208,11 @@ h4{
     padding-top: 5px;
     padding-left: 400px;
     padding-right: 400px;
-
 }
 
 /* .-----------footer ---------*/
 
 footer{
-
     height: 10vh;
    background-color: rgb(42, 90, 122);
    /* color:white; */
@@ -210,7 +220,6 @@ footer{
     color:white;
     font-size: medium;
     text-align: center;
-
     bottom: 0px;
 }
 
@@ -219,11 +228,13 @@ footer{
 /* ---------------------------------------------------------------*/
 .container-tickets
 {
-
-    display: inline-flex;
+    display: flex;
     text-align: center;
-    margin-left:180px;
-    width: 650px;
+
+
+    
+    justify-content: center;
+       align-items: center;
 }
 
 .btn-estudiante
@@ -231,8 +242,8 @@ footer{
  border-color: rgb(65, 151, 221);
  margin-left:2px;
  background-color: white;
-
 }
+
 .btn-trainee
 {
  border-color: rgb(6, 141, 51);
@@ -244,7 +255,6 @@ footer{
     border-color: rgb(219, 125, 16);
     margin-left:2px;
     background-color: white;
-
 }
 
 h5{
@@ -255,7 +265,6 @@ h5{
     padding-bottom: 5px;
     margin-left: 5PX;
 }
-
 
 .btn-pagar{
     background-color: rgb(117, 177, 192);
@@ -268,7 +277,6 @@ h5{
     text-align: left;
 }
 
-
 .btn-borrar{
     background-color: rgb(81, 170, 88);
     color:white;
@@ -277,9 +285,8 @@ h5{
     padding-bottom:  5px;
     padding-top: 5px;
     margin-left: 10PX;
-
-
 }
+
 .btn-resumen{
     background-color: rgb(81, 170, 88);
     color:white;
@@ -288,9 +295,10 @@ h5{
     padding-bottom:  5px;
     padding-top: 5px;
     margin-left:10PX;
-
 }
+
 .tex-cent{
     height: 400px;
 }
+
 }
