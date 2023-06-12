@@ -1,49 +1,54 @@
-
+// alert("Hello!")
 
 // ------------declaración de variables --------------
 const precio= 200;
-var estudiante= 0.80;
-var trainee= 0.50;
-var junior= 0.15;
+const categoria =["0.80" ,"0.50","0.15" ]
 
 
-// const cantidad = document.getElementById("cantidad")
-//  document.addEventListener(prompt("Cuantas entradas quieres"))
-const cantidad = prompt("Cuantas entradas quieres")
+var totalf= (cantidad * precio);
+// console.log((totalf))
 
-//  cantidad= prompt(cantidad())
 
- var totalf= (cantidad * precio);
- console.log((totalf))
 
- switch (totalFinal){
-    case estudiante:
-      pagar= totalf * estudiante;
-      break
-    case trainee:
-      pagar= totalf * trainee;
-      break
-    case junior:
-     pagar= totalf * junior;
-     break
+// function pagarTotal(indice)
+// {
+//   categoria[categoriaElegida].classList.remove("elegida")
+//   categoria[indice].classList.add("elegida")
+//   categoriaElegida = indice
 
-    default: 
-    document.write("Selecione un botón correcto")
-  console.log("totalf"("click"("resumen")))
+// }
+
+class Compra{
+    constructor(nombre, apellido, categoria, cantidad){
+        this.nombre=nombre;
+        this.apellido=apellido;
+        this.categoria=categoria;
+        this.cantidad=cantidad;
+    }
 }
 
- 
+class UI{
+    addCompra(){
 
-var resumen= document.getElmentById("resumen");
-var totalFinal= document.getElmentById("pagar");
+    }
 
-function resumen(){
-  console.log(categoria.value)
-  console.log(cantidad.value)
-  pagar.innerHTML = cantidad.value
-  document.getElementById("borrar").addEventListener("click"())
-  document.getElementById("formulario").reset();
 }
+
+
+// eventos DOM
+document.getElementById('formulario').addEventListener('submit', function(e){
+    const nombre= document.getElementById('nombre'). value;
+    const apellido= document.getElementById('apellido'). value;
+    const categoria= document.getElementById('categoria'). value;
+    const cantidad= document.getElementById('cantidad'). value;
+
+    console.log(nombre, apellido, categoria, cantidad, (cantidad*200 * 0.80));
+    const compra= new Compra(nombre, apellido, categoria, cantidad,);
+   e.preventDefault();
+
+   alert(nombre +  apellido  + ' ha seleccionado ' + cantidad + ' entradas  a: ' +  '$' + ((cantidad*200) * 0.80 ));
+});
+
 
 
 

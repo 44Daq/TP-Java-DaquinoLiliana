@@ -148,18 +148,13 @@ h4{
     border-color: transparent;
 }
 /* -----------------------cajas-------------------- */
-.container-col{
-    display: inline-flex;
-    margin-right: 0px;
-    margin-left: 0px;
+.container-dos{
+    display:flex;
+    justify-content:center;
+    margin: 0px;
+ 
 }
 
-.caja2-4{
-
-   background-color: rgb(78, 75, 75);
-   color: white;
-  
-}
 .oct-text
 {
     text-align: justify;
@@ -230,11 +225,8 @@ footer{
 {
     display: flex;
     text-align: center;
-
-
-    
     justify-content: center;
-       align-items: center;
+    align-items: center;
 }
 
 .btn-estudiante
@@ -261,18 +253,13 @@ h5{
     color:black;
 }
 
-.input{
-    padding-bottom: 5px;
-    margin-left: 5PX;
-}
-
-.btn-pagar{
+.btn-primary{
     background-color: rgb(117, 177, 192);
     color:white;
     border-radius: 5px;
     border-color: transparent;
     padding-bottom:  5px;
-    padding-top: 5px;
+    padding: 10px;
     margin-left: 10PX;
     text-align: left;
 }
