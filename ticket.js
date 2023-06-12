@@ -42,11 +42,12 @@ document.getElementById('formulario').addEventListener('submit', function(e){
     const categoria= document.getElementById('categoria'). value;
     const cantidad= document.getElementById('cantidad'). value;
 
-    console.log(nombre, apellido, categoria, cantidad, (cantidad*200 * 0.80));
+    // console.log(nombre, apellido, categoria, cantidad, (cantidad*200 * 0.80));
     const compra= new Compra(nombre, apellido, categoria, cantidad,);
    e.preventDefault();
 
-   alert(nombre +  apellido  + ' ha seleccionado ' + cantidad + ' entradas  a: ' +  '$' + ((cantidad*200) * 0.80 ));
+   alert(nombre + " " + apellido + " " + ' has seleccionado ' + cantidad + ' entradas  a: ' +  '$' + (cantidad*200) 
+  +  " " + 'Se te aplicará un descuento de 80%' + '$' + ((cantidad*200) * 0.80 ) );
 });
 
 
