@@ -1,10 +1,8 @@
 @media only screen and (min-width:320px) and (max-width: 2048px)
 {
-*{box-sizing: border-box;
+*{
+    box-sizing: border-box;
 
-/* 
-    margin:0;
-    padding: 0; */
 }
 html, body{
     height: 100;
@@ -38,7 +36,6 @@ header {
 
 }
 /*---------------------- sección class="container-conf"  --------------------------*/
-
 .contenedor-ba{
     display: inline-flex;
     text-align: right;
@@ -84,25 +81,21 @@ header {
 
 
 /* --------------conoce a los oradores ---------*/
-/* OK */
 h6{
     margin-top: 10px;
     text-align: center;
-
 }
 h4{
     text-align: center;
     font-size: x-large;
 }
 /*--------------container-orador------------------*/
-
 .container-oradores{
  display: flex;
  text-align: left;
  
     justify-content: center;
     align-items: center;
-
 }
 .jobs{
     margin-left:4px;
@@ -120,7 +113,6 @@ h4{
     width: 310px;
     height: 650px;
 }
-
 
 .btn-yellow{
     background-color: rgb(243, 243, 51);
@@ -152,7 +144,6 @@ h4{
     display:flex;
     justify-content:center;
     margin: 0px;
- 
 }
 
 .oct-text
@@ -171,7 +162,6 @@ h4{
 }
 
 /* ------------formulario----------- */
-
  .tex-cent
  {  height: 100vh;
     text-align:center;
@@ -205,7 +195,7 @@ h4{
     padding-right: 400px;
 }
 
-/* .-----------footer ---------*/
+/* -----------footer ---------*/
 
 footer{
     height: 10vh;

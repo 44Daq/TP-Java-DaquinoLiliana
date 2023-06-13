@@ -33,8 +33,6 @@ class UI{
     }
 
 }
-
-
 // eventos DOM
 document.getElementById('formulario').addEventListener('submit', function(e){
     const nombre= document.getElementById('nombre'). value;
