@@ -44,9 +44,11 @@ document.getElementById('formulario').addEventListener('submit', function(e){
     const compra= new Compra(nombre, apellido, categoria, cantidad,);
    e.preventDefault();
 
-   alert(nombre +  apellido  + ' ha seleccionado ' + cantidad + ' entradas  a: ' +  '$' + ((cantidad*200) * 0.80 ));
+   alert(nombre +  apellido  + ' has seleccionado ' + cantidad + ' entradas  a: ' +  '$200 - ' +' Total a pagar' + '$ ' + ((cantidad*200) * 0.80 ));
+ 
+
+  
 });
 
-
-
+// document.getElementById("formulario").reset('btn-borrar');
 
