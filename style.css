@@ -1,5 +1,6 @@
 @media only screen and (min-width:320px) and (max-width: 2048px)
-{
+/* @media only screen and (min-device-width:320px) and (max-device-width: 2048px) */
+{device-width
 *{
     box-sizing: border-box;
 
@@ -13,7 +14,7 @@ html, body{
 /* ------------------ encabezado --------------- */
 header {
     background-color: rgb(92, 88, 88);
-    display: inline-flex;
+    display: flex;
     width: 100%;
     color: white;
 }
@@ -37,7 +38,7 @@ header {
 }
 /*---------------------- sección class="container-conf"  --------------------------*/
 .contenedor-ba{
-    display: inline-flex;
+    display: flex;
     text-align: right;
 }
 /* texto de parrafo inicial */
@@ -141,7 +142,7 @@ h4{
 }
 /* -----------------------cajas-------------------- */
 .container-dos{
-    display:flex;
+    display:inline-flex;
     justify-content:center;
     margin: 0px;
 }
