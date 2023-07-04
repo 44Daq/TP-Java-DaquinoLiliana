@@ -6,9 +6,11 @@
      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Conf Bs As</title>
+
     <!-- servicio de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
     <!-- <link rel="stylesheet" href="style.css"> -->
     <!-- <link rel="stylesheet" media="only screen and (min-width:320px) and (max-width: 2048px) " href="style.css"> -->
     <link rel="stylesheet" media="only screen and (min-device-width:320px) and (max-device-width: 2048px) " href="style.css">
@@ -25,10 +27,10 @@
         <h2 style="text-align:left;  margin-left: -10px; margin-top: 20px;">Conf Bs As</h2>   
          <div class="txt">     
         
-         <lu href="#"><b> La Conferencia  &nbsp </b></lu>
-         <lu href="#">  Los oradores    &nbsp</lu>
-         <lu href="#">EL lugar y la fecha  &nbsp</lu>
-        <lu href="#">Conviertete en Orador &nbsp </lu>
+         <lu href="#"><b> La Conferencia   </b></lu>
+         <lu href="#">  Los oradores   </lu>
+         <lu href="#">EL lugar y la fecha  </lu>
+         <lu  href="orador">Conviertete en Orador </lo>
          <lu class="enlace_distint" href="./page/comprarTicket.html" >Comprar ticket</lu>
   
 
@@ -39,24 +41,23 @@
     <div class="contenedor-ba">
         <img src="ba1.jpg" width=100%>
     <!-- <div class="centrado-ba"> -->
-    <p class="con" style="color:white; font-size:x-large;"><b>Conf Bs As</b></p>   
+    <p class="confBA" style="color:white; font-size:x-large;"><b>Conf Bs As</b></p>   
     <div class="texto-ba">
          <p><pre>      Bs As llega por primera vez a Argentina. Un evento para compartir con
         nuestra comunidad el conocimiento y experiencia de los espertos que
           están creando el futuro de Internet. Ven a conocer a mienbros del
         evento, a otros estudiantes de Codo a Codo y los oradores de primer
                                    nivel que tenemos para ti. Te esperamos!
-          </pre></p>
+          </pre></p> 
     <div class="dos">
-         <button class="btn-orador" >Quiero ser orador </button>
-
-             <div class="btn-tic" > <script src="ticket.html"> </script>     
-             <form action="ticket.html">
-             <input type="submit" style="background-color: green; color: white; border-color: green; 
-             font-size: large; border-radius: 5px;" value="Comprar Tickets" />
-              </form>   
-         </button>  
-    </div>
+        <div class="btn btn-orador" >Quiero ser orador </div>
+        <div class="btn btn-tic" >Comprar Tickets </div>
+        <form action="ticket.html"> </form> 
+      
+        <script src="ticket.html" ></script>
+       
+         
+        </div>
     </div>
 </section>   
       
@@ -66,7 +67,7 @@
          <h4>ORADORES</h4>
 
          </div>
-<section class="container-oradores" id="orador" >
+<section class="container-oradores" id="#orador" >
         <div class="img-thumbnail jobs">
              <img src="steve.jpg" alt="Steve Jobs" width="298"  height="298">
              <button class="btn-yellow" ><b>JavaScritp</b></button>
@@ -129,21 +130,22 @@
     </div>    
 </section>
 
-<div class="tex-cent" place-items="center">CONVIÉRTETE EN UN
+<div class="tex-cent" place-items="center" id="orador">CONVIÉRTETE EN UN
     <h3>ORADOR</h3>
-    <p>Anótate como orador para dar una <u> charla  ignite.</u>Cuéntanos de qué quieres hablar!</p>    
-    <div class="input" > <input type="nombre"style="width : 417px"  name="nombre" placeholder="Nombre" ></div>
-    <div class="input" > <input type="apellido" style="width : 414px" name="apellido" placeholder="Apellido"></div>
-    </p><!-- imput se utiliza para ingresar datos-->
+    <p>Anótate como orador para dar una <span class="underline"> charla  ignite</span> .Cuéntanos de qué quieres hablar!</p>    
+    <div class="requeridos">
+    <input type="text"  name="nombre" placeholder="Nombre" required>
+    <input type="text"  name="apellido" placeholder="Apellido" required></div>
+
           
-    <textarea class="coment" name="comentarios" rows="5" cols="100">   Sobre qué quieres hablar?</textarea>
+    <textarea class="coment" name="comentarios" rows="5" cols="45">   Sobre qué quieres hablar?</textarea>
     <!-- <br></br> -->
-    <p style="text-align: center; font-size: small;"> Recuerda incluir un título para tu charla</p>
+    <div class="charla" style="font-size: small;"> Recuerda incluir un título para tu charla</div>
     
     <button class="btn-enviar" >Enviar</button>      
 </div>  
 <footer class="container-fluid">
-    <div class="row">
+    <div class="pieTxt">
         <div class="col bg-footer d-flex justify-content-around 
         aling-items-center">
             <a >Preguntas <br>frecuentes  </a>
@@ -155,6 +157,8 @@
         </div>
     </div>
 </footer>  
-          
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
+    crossorigin="anonymous"></script>       
 </body>
 </html> 

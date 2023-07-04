@@ -3,6 +3,8 @@
 {device-width
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
 }
 html, body{
@@ -17,6 +19,7 @@ header {
     display: flex;
     width: 100%;
     color: white;
+    text-align:right ;
 }
 .h2{
     text-align:left ;
@@ -24,13 +27,15 @@ header {
 
 }
 .txt {
-    text-align:right;
+    /* text-align:right; */
     font-size: smaller;
-    margin-top: 30px;
-    margin-left: 100px;
+    margin-top: 2rem;
+    /* margin-left: 5rem; */
+
+    width: 100vh;
 }
 .imagen-logo{
-    margin-left:10px;
+    margin-left:2rem;
 }
 .enlace_distint{
   color: rgb(14, 146, 14);
@@ -51,7 +56,7 @@ header {
     right:5%;
 
 }
-.con{
+.confBA{
     top: 60%;right:5%;
     position: absolute;
     font-size: large;
@@ -77,7 +82,15 @@ header {
 .btn-tic{
     right:-50%;
     position: absolute;
-    margin-top: -40px;
+
+    background-color: green;
+    margin-left: 30px;
+    margin-right:10px;
+    margin-bottom: -50px;
+    border-radius: 5px; 
+  
+    color:white;
+    font-size:large ;
 }
 
 
@@ -176,57 +189,66 @@ h4{
 
 /* ------------formulario----------- */
  .tex-cent
- {  height: 100vh;
+ {  height: 70vh;
     text-align:center;
     font-size: medium;
+    margin-top: 1rem;
+  
  }
 
 .input{
     display: inline-flex;
-    margin-left: 1px;
+    margin-left: 1px; 
 }
 
 .coment{
     color:  rgb(138, 135, 135);
     font-size: large;
+    width: 80vh;
 }
+
 .pieTxt
-{  margin-top: 0px;
-    text-align: left;
-    margin-left:80px;
+{  
+    text-align: center;
+ 
 }
 
 .btn-enviar{
     margin-top: 15px;
-    background-color: rgb(23, 201, 38);
+    background-color: rgb(75, 144, 81);
     color:white;
     border-radius: 5px;
     border-color: transparent;
-    padding-bottom:  5px;
-    padding-top: 5px;
-    padding-left: 400px;
-    padding-right: 400px;
+    width: 80vh;
 }
-
+.btn-enviar:hover{
+    background-color: rgb(19, 127, 28);
+}
 /* -----------footer ---------*/
-
 footer{
-    height: 10vh;
-   background-color: rgb(42, 90, 122);
-   /* color:white; */
+    background-image: linear-gradient(to right ,rgb(11, 65, 101) ,rgb(88, 175, 234));
+    padding: 1rem;
+   }
+footer{
+    /* height: 10vh; */
+
+   color:white;
     width: 100%;
     color:white;
-    font-size: medium;
-    text-align: center;
-    bottom: 0px;
+    font-size: small;
+    /* text-align: center; */
+    align-items: center;
+    justify-content: space-between;
+
 }
+
 
 /* ---------------------------------------------------------------*/
 /* ----------------------estilo de ticket ------------------------*/
 /* ---------------------------------------------------------------*/
 .container-tickets
-{
-    display: flex;
+{  
+    /* display: flex; */
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -255,6 +277,21 @@ footer{
 h5{
     color:black;
 }
+.underline{
+    text-decoration: underline dotted;
+}
+.requeridos{
+    width: 100%;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+.requeridos-nombre{
+width: 50vh;
+}
+.requeridos-apellido{
+    width: 50vh;
+    
+    }
 
 .btn-primary{
     background-color: rgb(117, 177, 192);
@@ -289,6 +326,10 @@ h5{
 
 .tex-cent{
     height: 400px;
+   
+}
+.form-group{
+      width: 100%;
 }
 
 }
