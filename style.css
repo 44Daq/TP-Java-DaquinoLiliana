@@ -32,6 +32,12 @@ header {
 
 
 }
+.btn-tic a{
+    text-decoration: none;
+    color: white;
+   
+   
+   }
 .txt {
     text-align:right;
     font-size: smaller;
