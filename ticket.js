@@ -1,8 +1,11 @@
-// alert("Hello!")
+// alert("Hello!");
+// console.log("Liliana");
 
 // ------------declaración de variables --------------
-const precio= 200;
-const categoria=['estudiante', 'trainee' ,'junior' ]
+const PRECIO= 200;
+const TEXTO_PAGAR= "Total a Pagar: $";
+const BOTON_RESUMEN= document.getElementById("resumen");
+// const categoria=['estudiante', 'trainee' ,'junior' ]
 estudiante = 0.20;
 trainee= 0.50;
 junior= 0.95;
@@ -26,14 +29,14 @@ junior= 0.95;
 
 // }
 
-class Compra{
-    constructor(nombre, apellido, categoria, cantidad){
-        this.nombre=nombre;
-        this.apellido=apellido;
-        this.categoria=categoria;
-        this.cantidad=cantidad;
-    }
-}
+// class Compra{
+//     constructor(nombre, apellido, categoria, cantidad){
+//         this.nombre=nombre;
+//         this.apellido=apellido;
+//         this.categoria=categoria;
+//         this.cantidad=cantidad;
+//     }
+// }
 
 // class UI{
 //     addCompra(){
@@ -59,31 +62,31 @@ class Compra{
 
 
 // eventos DOM
-document.getElementById('formulario').addEventListener('submit', function(e){
-    const nombre= document.getElementById('nombre'). value;
-    const apellido= document.getElementById('apellido'). value;
-    const categoria= document.getElementById('categoria'). value;
-    const cantidad= document.getElementById('cantidad'). value;
+// document.getElementById('formulario').addEventListener('submit', function(e){
+//     const nombre= document.getElementById('nombre'). value;
+//     const apellido= document.getElementById('apellido'). value;
+//     const categoria= document.getElementById('categoria'). value;
+//     const cantidad= document.getElementById('cantidad'). value;
 
-    // console.log(nombre, apellido, categoria, cantidad, (cantidad*200 * estudiante));
-    // const compra= new Compra(nombre, apellido, categoria, cantidad,);
-   e.preventDefault();
+//     // console.log(nombre, apellido, categoria, cantidad, (cantidad*200 * estudiante));
+//     // const compra= new Compra(nombre, apellido, categoria, cantidad,);
+//    e.preventDefault();
 
-   alert(nombre + ' ' +  apellido  + ' has seleccionado ' + cantidad + ' entradas  a: ' +  '$200 - ' +  
-   'Total a pagar ' + ' $' + ((cantidad*200) * estudiante));
-   document.getElementById("formulario").reset('btn-borrar');
+//    alert(nombre + ' ' +  apellido  + ' has seleccionado ' + cantidad + ' entradas  a: ' +  '$200 - ' +  
+//    'Total a pagar ' + ' $' + ((cantidad*200) * estudiante));
+//    document.getElementById("formulario").reset('btn-borrar');
 
-   alert(nombre + ' ' +  apellido  + ' has seleccionado ' + cantidad + ' entradas  a: ' +  '$200 - ' +  
-   'Total a pagar ' + ' $' + ((cantidad*200) * trainee));
-   document.getElementById("formulario").reset('btn-borrar');
+//    alert(nombre + ' ' +  apellido  + ' has seleccionado ' + cantidad + ' entradas  a: ' +  '$200 - ' +  
+//    'Total a pagar ' + ' $' + ((cantidad*200) * trainee));
+//    document.getElementById("formulario").reset('btn-borrar');
 
-   alert(nombre + ' ' +  apellido  + ' has seleccionado ' + cantidad + ' entradas  a: ' +  '$200 - ' +  
-   'Total a pagar ' + ' $' + ((cantidad*200) * junior));
-   document.getElementById("formulario").reset('btn-borrar');
+//    alert(nombre + ' ' +  apellido  + ' has seleccionado ' + cantidad + ' entradas  a: ' +  '$200 - ' +  
+//    'Total a pagar ' + ' $' + ((cantidad*200) * junior));
+//    document.getElementById("formulario").reset('btn-borrar');
  
 
   
-});
+// });
 
 // document.getElementById("formulario").reset('btn-borrar');
 

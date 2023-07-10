@@ -25,15 +25,15 @@
         
         </div>
         <h2 style="text-align:left;  margin-left: -10px; margin-top: 20px;">Conf Bs As</h2>   
-         <div class="txt">     
+        <div class="txt col bg-header d-flex justify-content-around 
+        aling-items-center" >     
         
          <lu href="#"><b> La Conferencia   </b></lu>
-         <lu href="#">  Los oradores   </lu>
-         <lu href="#">EL lugar y la fecha  </lu>
-         <lu  href="orador">Conviertete en Orador </lo>
-         <lu class="enlace_distint" href="./page/comprarTicket.html" >Comprar ticket</lu>
-  
-
+         <a href="#Oradores" >  Los oradores   </a>
+         <a href="#lugar" >EL lugar y la fecha  </a>
+         <a  href="#orador">Conviertete en Orador </a>
+         <a  href="ticket.html"  style=" color: rgb(14, 146, 14);">Comprar ticket</a>
+     
         </div>
     </header>
      
@@ -51,12 +51,12 @@
           </pre></p> 
     <div class="dos">
         <div class="btn btn-orador" >Quiero ser orador </div>
-        <div class="btn btn-tic" >Comprar Tickets </div>
-        <form action="ticket.html"> </form> 
-      
-        <script src="ticket.html" ></script>
+        <a href="ticket.html"  class="btn btn-tic" >Comprar Tickets 
+            <form  action="ticket.html"> </form>
+              
+                <script src="ticket.html" ></script>
+            </form> 
        
-         
         </div>
     </div>
 </section>   
@@ -67,8 +67,8 @@
          <h4>ORADORES</h4>
 
          </div>
-<section class="container-oradores" id="#orador" >
-        <div class="img-thumbnail jobs">
+<section class="container-oradores" id="Oradores">
+        <div id="#Oradores" class="img-thumbnail jobs">
              <img src="steve.jpg" alt="Steve Jobs" width="298"  height="298">
              <button class="btn-yellow" ><b>JavaScritp</b></button>
              <button class="btn-cyan" ><b>React</b></button>
@@ -110,7 +110,7 @@
 <br></br>
 
 <section  class="container-dos">        
-    <div class="container-hono" >
+    <div class="container-hono" id="lugar">
         <img src="honolulu.jpg" > 
             <!-- <img src="honolulu.jpg" width="500px" height="400px">  -->
         </div>
@@ -134,11 +134,12 @@
     <h3>ORADOR</h3>
     <p>Anótate como orador para dar una <span class="underline"> charla  ignite</span> .Cuéntanos de qué quieres hablar!</p>    
     <div class="requeridos">
-    <input type="text"  name="nombre" placeholder="Nombre" required>
-    <input type="text"  name="apellido" placeholder="Apellido" required></div>
+    <input type="text"  name="nombre" style="width : 248px" placeholder=" Nombre" required>
+    <input type="text"  name="apellido"style="width : 248px" placeholder="Apellido" required>
+    </div>
 
           
-    <textarea class="coment" name="comentarios" rows="5" cols="45">   Sobre qué quieres hablar?</textarea>
+    <textarea class="coment" name="comentarios" rows="5" cols="50">   Sobre qué quieres hablar?</textarea>
     <!-- <br></br> -->
     <div class="charla" style="font-size: small;"> Recuerda incluir un título para tu charla</div>
     

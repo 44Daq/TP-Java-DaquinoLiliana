@@ -26,21 +26,24 @@ header {
     font-size: small;
 
 }
+.txt a{
+ text-decoration: none;
+ color: white;
+
+
+}
 .txt {
-    /* text-align:right; */
+    text-align:right;
     font-size: smaller;
     margin-top: 2rem;
-    /* margin-left: 5rem; */
-
     width: 100vh;
 }
 .imagen-logo{
     margin-left:2rem;
 }
-.enlace_distint{
-  color: rgb(14, 146, 14);
 
-}
+
+
 /*---------------------- sección class="container-conf"  --------------------------*/
 .contenedor-ba{
     display: flex;
@@ -186,7 +189,9 @@ h4{
     color:white;
     font-size: x-large;
 }
-
+.btn-hono:hover{
+    border-color: rgb(174, 182, 191 ) ;
+}
 /* ------------formulario----------- */
  .tex-cent
  {  height: 70vh;
@@ -195,10 +200,16 @@ h4{
     margin-top: 1rem;
   
  }
+ .input1:hover{  
 
-.input{
+    background-color: rgb(40, 180, 99 ) ;
+  
+ }
+
+.input1{
     display: inline-flex;
     margin-left: 1px; 
+    
 }
 
 .coment{
@@ -215,14 +226,14 @@ h4{
 
 .btn-enviar{
     margin-top: 15px;
-    background-color: rgb(75, 144, 81);
+    background-color: rgb(23, 165, 137);;
     color:white;
     border-radius: 5px;
     border-color: transparent;
     width: 80vh;
 }
 .btn-enviar:hover{
-    background-color: rgb(19, 127, 28);
+    background-color: rgb(40, 180, 99 ) ;
 }
 /* -----------footer ---------*/
 footer{
@@ -331,5 +342,9 @@ width: 50vh;
 .form-group{
       width: 100%;
 }
-
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
 }
