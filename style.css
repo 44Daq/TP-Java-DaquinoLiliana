@@ -21,9 +21,9 @@ header {
     color: white;
     text-align:right ;
 }
-.h2{
+.h3{
     text-align:left ;
-    font-size: small;
+    /* font-size: small; */
 
 }
 .txt a{
@@ -35,9 +35,7 @@ header {
 .btn-tic a{
     text-decoration: none;
     color: white;
-   
-   
-   }
+}
 .txt {
     text-align:right;
     font-size: smaller;
@@ -201,6 +199,9 @@ h4{
     margin-top: 1rem;
   
  }
+ .underline{
+    text-decoration: underline dotted;
+}
  .input1:hover{  
 
     background-color: rgb(40, 180, 99 ) ;
@@ -255,8 +256,8 @@ footer{
 /* ---------------------------------------------------------------*/
 /* ----------------------estilo de ticket ------------------------*/
 /* ---------------------------------------------------------------*/
-.container-tickets
-{   margin-top: 1rem;
+.container-tickets{
+ margin-top: 1rem;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -285,9 +286,7 @@ footer{
 h5{
     color:black;
 }
-.underline{
-    text-decoration: underline dotted;
-}
+
 .requeridos{
     width: 100%;
     margin-bottom: 1rem;
@@ -299,6 +298,9 @@ width: 50vh;
 .requeridos-apellido{
     width: 50vh;
  }
+/* .label{
+    margin-right: 10rem;
+} */
 
 .btn-primary{
     background-color: rgb(117, 177, 192);
