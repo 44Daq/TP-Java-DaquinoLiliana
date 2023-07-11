@@ -165,23 +165,18 @@ h4{
 /* -----------------------cajas-------------------- */
 .container-dos{
     display:flex;
-    margin-top: 1rem;
-  
+    margin-top: 1rem;  
 }
 
 .container-hono img{
     width: 50vw;
     margin: 0;
-
 }
 .hono-gris
 {
     padding: 1rem;
     background-color: gray;
-    
     color: white;
-  
-
 }
 .oct-text{
     margin-left: 15px;
@@ -247,13 +242,10 @@ footer{
     padding: 1rem;
    }
 footer{
-    /* height: 10vh; */
-
    color:white;
     width: 100%;
     color:white;
     font-size: small;
-    /* text-align: center; */
     align-items: center;
     justify-content: space-between;
 
@@ -264,8 +256,7 @@ footer{
 /* ----------------------estilo de ticket ------------------------*/
 /* ---------------------------------------------------------------*/
 .container-tickets
-{  
-    /* display: flex; */
+{   margin-top: 1rem;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -307,8 +298,7 @@ width: 50vh;
 }
 .requeridos-apellido{
     width: 50vh;
-    
-    }
+ }
 
 .btn-primary{
     background-color: rgb(117, 177, 192);
@@ -326,7 +316,7 @@ width: 50vh;
     color:white;
     border-radius: 5px;
     border-color: transparent;
-    padding-bottom:  5px;
+    padding-bottom: 5px;
     padding-top: 5px;
     margin-left: 10PX;
 }

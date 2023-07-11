@@ -18,10 +18,10 @@
         <h2 style="text-align:left;  margin-left: -10px; margin-top: 20px;">Conf Bs As</h2>
         <div class="txt col bg-header d-flex justify-content-around 
         aling-items-center">
-            <a href="#"><b> La Conferencia </b></a>
+            <!-- <a href="#"><b> La Conferencia </b></a>
             <a href="#"> Los oradores </a>
-            <a href="#">EL lugar y la fecha </a>
-            <a href="#">Conviertete en Orador</a> 
+            <a href="#">EL lugar y la fecha </a> -->
+            <a href="#">LOGIN</a> 
             <!-- <a href="./page/comprarTicket.html" class="enlace_distint">Comprar ticket</lu>
         <div class="txt-Conf"> 
                 <img class="imagen-logo" src="codoacodo.png" alt="logo" width="100px" height="70px">
@@ -91,19 +91,23 @@
             </div>
             <!-- imput se utiliza para ingresar datos-->
             <br></br>
-            <div class="input1"> 
+            <!-- <div class="input1"> 
                 <input type="number" style="width:300px" id="dni" name="correo" placeholder="DNI">
-            </div>
+            </div> -->
             <div class="input1"> 
-                <input type="text" style="width : 300px" id="correo" name="correo" placeholder="Correo">
+                <input type="text" style="width:606px" id="correo" name="correo" placeholder="Correo">
             </div>
             <br></br>
+            <div class="label">
+                <label for="Categoria">Categoria</label>
+                <label for="Categoria">Cantidad</label>
+            </div>
             <div class="input1">
-                <input type="number" id="cantidad" style="width : 300px" name="cantidad" placeholder="Cantidad">
+                <input type="number" id="cantidad" style="width:300px" name="cantidad"  placeholder="Cantidad">
             </div>
 
-            <div class="input1" id="categoria" name="categoria">
-                <select style="width : 300px">
+            <div class="input1">
+                <select style="width : 300px" id="categoria" name="categoria">
                     <option value="">Categoria</option>
                     <option value="value0" id="estudiante">Estudiante</option>
                     <option value="value1" id="trainee">Trainee</option>
@@ -112,35 +116,33 @@
             </div>
             <br></br>
             <div class="form-group">
-                <input type="text" id="pagar" name=pagar class="btn btn-primary btn-block" placeholder="Total a Pagar: $" style="width:615px;" readonly>
-                    
+                <input type="text" id="pagar" name=pagar class="btn btn-primary btn-block" placeholder="Total a Pagar: $" 
+                value="Total a Pagar $" style="width:615px;" readonly>     
             </div>
 
             <br></br>
             <div class="btn-dos">
-                <button class="btn-borrar" id="borrar" style="width : 300px">Borrar</button>
-                <button class="btn-resumen" id="resumen" style="width : 300px">Resumen</button>
+                <input type="button" class="btn-borrar" id="borrar" style="width : 300px" value="Borrar">
+                <input type="button" class="btn-resumen" id="resumen" style="width : 300px" value="Resumen">
             </div>
 
         </form>
-
-
+        <footer class="container-fluid">
+            <div class="pieTxt">
+                <div class="col bg-footer d-flex justify-content-around
+            aling-items-center">
+                    <a>Preguntas <br>frecuentes</a>
+                    <a>Contáctanos </a>
+                    <a>Prensa </a></a>
+                    <a>Términos y <br>condiciones </a>
+                    <a>Privacidad </a>
+                    <a>Estudiantes</a>
+                </div>
+            </div>
+        </footer>
 
     </section>
   <script src="ticket.js"></script>
 </body>
-<footer class="container-fluid">
-    <div class="row">
-        <div class="col bg-footer d-flex justify-content-around
-    aling-items-center">
-            <a>Preguntas <br>frecuentes</a>
-            <a>Contáctanos </a>
-            <a>Prensa </a></a>
-            <a>Términos y <br>condiciones </a>
-            <a>Privacidad </a>
-            <a>Estudiantes</a>
-        </div>
-    </div>
-</footer>
 
 </html>
