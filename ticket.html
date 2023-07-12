@@ -7,24 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tickets</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <header>
         <div class="txt-Conf">
-            <img class="imagen-logo" src="codoacodo.png" alt="logo" style="width:100px; height:70px">
+            <img class="imagen-logo" src="/Imagenes/codoacodo.png" alt="logo" style="width:100px; height:70px">
         </div>
         <h2 style="text-align:left;  margin-left: 10px; margin-top: 20px;">Conf Bs As</h2>
         <div class="txt  aling-items-right">
           
-            <a href="#">LOGIN</a> 
+            <!-- <a href="login" >LOGIN</a>  -->
+            <a  class="login" href="base.php" >Login</a>
   
     </header>
     <!-- <br></br> -->
 
     <section class="container-tickets" id="ticket">
-        <button class="btn-estudiante" alt="Estudiante" id="estudiante" style="width : 230px">
+        <button class="btn-estudiante" alt="Estudiante" id="t-estudiante" style="width : 230px">
 
             <div style="background-color:  rgb(65, 151, 221);">
                 <h3>Estudiante</h3>
@@ -36,9 +37,9 @@
             </div>
         </button>
 
-        <button class="btn-trainee" alt="Trainee" style="width : 230px">
+        <button class="btn-trainee" alt="Trainee" id="t-trainee"style="width : 230px">
             <div style="background-color:   rgb(6, 141, 51);">
-                <h3>Traine</h3>
+                <h3>Trainee</h3>
             </div>
             <!-- <div style="justify-self: center;"> -->
             <p>Tienen un descuento </p>
@@ -48,7 +49,7 @@
         </button>
 
 
-        <button class="btn-junior" alt="Junior" style="width : 230px">
+        <button class="btn-junior" alt="Junior" id="t-junior"style="width : 230px">
             <div style="background-color:   rgb(219, 125, 16);">
                 <h3>Junior</h3>
             </div>

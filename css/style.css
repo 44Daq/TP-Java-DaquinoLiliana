@@ -23,13 +23,11 @@ header {
 }
 .h3{
     text-align:left ;
-    /* font-size: small; */
-
+    font-size: small;
 }
 .txt a{
  text-decoration: none;
  color: white;
-
 
 }
 .btn-tic a{
@@ -38,16 +36,14 @@ header {
 }
 .txt {
     text-align:right;
-    font-size: smaller;
+    font-size: medium;
     margin-top: 2rem;
     width: 100vh;
 }
 .imagen-logo{
     margin-left:2rem;
 }
-
-
-
+/* ------------------------------------------------------------------------------- */
 /*---------------------- sección class="container-conf"  --------------------------*/
 .contenedor-ba{
     display: flex;
@@ -57,7 +53,7 @@ header {
 .texto-ba{
     margin-top: 20px;
     font-size:medium;
-    color:white;
+    color:white ;
     position: absolute;
     top: 60%;
     right:5%;
@@ -263,18 +259,37 @@ footer{
     align-items: center;
 }
 
+.login:hover{
+    color: rgb(196, 118, 15) ;
+}
+
+.login{
+    color:white;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+.login:hover{
+    color: rgb(13, 138, 11) ;
+}
 .btn-estudiante
 {
  border-color: rgb(65, 151, 221);
  margin-left:2px;
  background-color: white;
 }
+.btn-estudiante:hover{
+    border-color: rgb(61, 61, 61);
+}
 
 .btn-trainee
 {
  border-color: rgb(6, 141, 51);
  margin-left:2px;
- background-color: white;
+ background-color: white;}
+
+.btn-trainee:hover{
+    border-color: rgb(61, 61, 61);
 }
 .btn-junior
 {
@@ -282,7 +297,9 @@ footer{
     margin-left:2px;
     background-color: white;
 }
-
+.btn-junior:hover{
+    border-color: rgb(61, 61, 61);
+}
 h5{
     color:black;
 }
@@ -298,12 +315,10 @@ width: 50vh;
 .requeridos-apellido{
     width: 50vh;
  }
-/* .label{
-    margin-right: 10rem;
-} */
+
 
 .btn-primary{
-    background-color: rgb(117, 177, 192);
+    background-color: rgb(72, 173, 198);
     color:white;
     border-radius: 5px;
     border-color: transparent;
@@ -322,6 +337,9 @@ width: 50vh;
     padding-top: 5px;
     margin-left: 10PX;
 }
+.btn-borrar:hover{
+    background-color:  rgb(7, 165, 20);
+}
 
 .btn-resumen{
     background-color: rgb(81, 170, 88);
@@ -332,7 +350,9 @@ width: 50vh;
     padding-top: 5px;
     margin-left:10PX;
 }
-
+.btn-resumen:hover{
+    background-color:  rgb(7, 165, 20);
+}
 .tex-cent{
     height: 400px;
    

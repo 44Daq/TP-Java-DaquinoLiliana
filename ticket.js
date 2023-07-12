@@ -90,6 +90,9 @@
 
 // document.getElementById("formulario").reset('btn-borrar');
 
+
+// ------------declaración de variables --------------
+
 const PRECIO=200;
 const TEXTO_PAGAR="Total a Pagar: $";
 const BOTON_RESUMEN=document.getElementById("resumen");
@@ -98,6 +101,8 @@ const INP_NAME=document.getElementById("nombre");
 const INP_SURNAME=document.getElementById("apellido");
 const INP_EMAIL=document.getElementById("correo");
 const INP_NUM=document.getElementById("cantidad");
+const INP_CAT=document.getElementById("categoria");
+const BOTON_ESTUDIANTE=document.getElementById("categoria");
 var RESULTADO=document.getElementById("pagar");
 var calculo=0;
 var cantidad=0;
@@ -137,9 +142,19 @@ BOTON_BORRAR.addEventListener("click",()=>{
     INP_SURNAME.value="";
     INP_EMAIL.value="";
     INP_NUM.value="";
+    INP_CAT.value="";
+    RESULTADO.value="";
 
 })
 
+BOTON_ESTUDIANTE.addEventListener("click",() => {
+    if(document.getElementById("categoria").value=="value0"){
+        alert("El valor cantidad no puede estar vacio");
+        return;
+    }
+    })
+
+// document.getElementById("btn-borrar").reset('RESULTADO');
 // BOTON_RESUMEN.addEventListener("click",function(){
 //     console.log("Hola sin función arrow!");
     
