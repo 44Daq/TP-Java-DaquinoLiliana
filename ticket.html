@@ -19,7 +19,9 @@
         <div class="txt  aling-items-right">
           
             <!-- <a href="login" >LOGIN</a>  -->
-            <a  class="login" href="base.php" >Login</a>
+            <a  class="login" href="http://localhost/phpmyadmin/sql.php?server=1&db=tickets&table=compra&pos=0">Login</a>
+            
+           
   
     </header>
     <!-- <br></br> -->
@@ -67,50 +69,48 @@
         <h3>VALOR DE TICKET $200</h3>
 
         <form id="formulario">
-          
-            <div class="input1"> 
-                <input type="text" style="width:300px" id="nombre" name="nombre" placeholder="Nombre">
-            </div>
-            <div class="input1"> 
-                <input type="text" style="width:300px" id="apellido" name="apellido" placeholder="Apellido">
-            </div>
-            <br></br>
-            <!-- <div class="input1"> 
-                <input type="number" style="width:300px" id="dni" name="correo" placeholder="DNI">
-            </div> -->
-            <div class="input1"> 
-                <input type="text" style="width:606px" id="correo" name="correo" placeholder="Correo">
-            </div>
-            <br></br>
+            <form action="base.php" method="POST">
+                <div class="input1"> 
+                     <input type="text" style="width:300px" id="nombre" name="nombre" placeholder="Nombre" required>
+                 </div>
+                <div class="input1"> 
+                    <input type="text" style="width:300px" id="apellido" name="apellido" placeholder="Apellido" required>
+                </div>
+                  <br></br>
+                <div class="input1"> 
+                  <input type="number" style="width:300px" id="dni" name="correo" placeholder="DNI" required>
+                </div>
+                <div class="input1"> 
+                     <input type="text" style="width:300px" id="correo" name="correo" placeholder="Correo" required>
+                </div>
+                <br></br>
          
-            <label for="Categoria">Categoria</label> 
-            <div class="input1">
-                
-                <input type="number" id="cantidad" style="width:230px" name="cantidad"  placeholder="Cantidad">
-            </div>
-            <label for="Cantidad">Cantidad</label>
-            <div class="input1">
+              <label for="Categoria">Cantidad</label> 
+                <div class="input1">
+                    <input type="number" id="cantidad" style="width:230px" name="cantidad" >
+                </div>
+                 <label for="Cantidad">Categoria</label>
+                <div class="input1">
               
-                <select style="width : 230px" id="categoria" name="categoria">
-                    <option value="">Categoria</option>
-                    <option value="value0" id="estudiante">Estudiante</option>
-                    <option value="value1" id="trainee">Trainee</option>
-                    <option value="value2" id="junior">Junior</option>
-                </select>
-            </div>
-            <br></br>
-            <div class="form-group">
-                <input type="text" id="pagar" name=pagar class="btn btn-primary btn-block" placeholder="Total a Pagar: $" 
-                value="Total a Pagar $" style="width:615px;" readonly>     
-            </div>
-            <br></br>
-
-        
-            <div class="btn-dos">
-                <input type="button" class="btn-borrar" id="borrar" style="width : 300px" value="Borrar">
-                <input type="button" class="btn-resumen" id="resumen" style="width : 300px" value="Resumen">
-            </div>
-            <br></br>
+                    <select style="width : 230px" id="categoria" name="categoria">
+                        <option value=""></option>
+                        <option value="value0" id="estudiante">Estudiante</option>
+                        <option value="value1" id="trainee">Trainee</option>
+                        <option value="value2" id="junior">Junior</option>
+                    </select>
+                </div>
+                 <br></br>
+                 <div class="form-group">
+                    <input type="text" id="pagar" name=pagar class="btn btn-primary btn-block" placeholder="Total a Pagar: $" 
+                    value="Total a Pagar $" style="width:615px;" readonly>     
+                 </div>
+                 <br></br>
+                <div class="btn-dos">
+                      <input type="button" class="btn-borrar" id="borrar" style="width : 300px" value="Borrar">
+                      <input type="button" class="btn-resumen" id="resumen" style="width : 300px" value="Resumen">
+                </div>
+                <br></br>
+            </form>
         </form>
         <footer class="container-fluid">
             <div class="pieTxt">
