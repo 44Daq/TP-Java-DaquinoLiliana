@@ -63,6 +63,7 @@ table{
  th, td{
    padding: 20px;
  }
+ 
  thead{
     background-color: cornflowerblue;
     border-bottom: solid 5px  rgb(15, 33, 67); 
