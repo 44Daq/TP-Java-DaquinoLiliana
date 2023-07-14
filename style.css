@@ -28,6 +28,7 @@ header {
 .txt a{
  text-decoration: none;
  color: white;
+ font-size: small;
 
 }
 .btn-tic a{
@@ -233,6 +234,29 @@ h4{
 .btn-enviar:hover{
     background-color: rgb(40, 180, 99 ) ;
 }
+
+#btn-up{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(133, 150, 154);
+    display: flex;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    position: fixed;
+    bottom: 80px;
+    right: 50px;
+    cursor: pointer;
+    border: 4px solid transparent;
+    transition: all 300ms ease;
+    transform: scale(0);
+
+}
+#btn-up:hover{
+    transform: scale(1.1);
+    border-color: rgba(0,0,0,0,1);
+}
 /* -----------footer ---------*/
 footer{
     background-image: linear-gradient(to right ,rgb(11, 65, 101) ,rgb(88, 175, 234));
@@ -259,15 +283,11 @@ footer{
     align-items: center;
 }
 
-.login:hover{
-    color: rgb(196, 118, 15) ;
-}
-
 .login{
     color:white;
     font-size: x-large;
     font-family: 'Times New Roman', Times, serif;
-   
+  
 }
 .login:hover{
     color: rgb(13, 138, 11) ;
@@ -315,8 +335,6 @@ width: 50vh;
 .requeridos-apellido{
     width: 50vh;
  }
-
-
 .btn-primary{
     background-color: rgb(72, 173, 198);
     color:white;

@@ -1,27 +1,111 @@
 *{
     box-sizing: border-box;
-     margin: 0;
-    padding: 0;
+    margin: 0;
+    padding: 0; 
+
 }
-
-.venta{
-
-    height: 100vh;
+body{
+    background-color: gainsboro;
+}
+header {
+    background-color: rgb(92, 88, 88);
+    display: flex;
     width: 100%;
-    background-image: linear-gradient(to right ,rgb(23, 108, 164) ,rgb(150, 193, 221));
+    color: white;
+    text-align:right ;
+}
+.h3{
+    text-align:left ;
+    font-size: small;
+    margin-right: 1rem;
+}
+.inicio:hover{
+    color: rgb(13, 138, 11) ;
+}
+.inicio{
+    color:white;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+  
+}
+.ven{
     text-align: center;
-    border-radius: 5px;
-    color: rgb(10, 0, 9);
+}
+/* .ora{
+    text-align: center;
+} */
+.txt a{
+ text-decoration: none;
+ color: white;
+ margin-left: 1rem;
 
 }
-.venta-p{
-    text-align: center;
+
+.txt {
+    text-align:right;
+    font-size: medium;
+    margin-top: 2rem;
+    width: 100vh;
 }
-.btn-enviar{
-    margin-top: 15px;
-    background-color: rgb(23, 165, 137);;
+
+
+/* .container-venta{
+ margin: 150px auto;
+ width: 600px;
+ 
+} */
+table{
+    background-color: white;
+    text-align: left;
+    width: 100%;
+    border-collapse:collapse ;
+}
+ th, td{
+   padding: 20px;
+ }
+ thead{
+    background-color: cornflowerblue;
+    border-bottom: solid 5px  rgb(15, 33, 67); 
+    color: black;
+}
+tr:nth-child(even){
+    background: rgb(147, 179, 239) ;
+
+}
+tr:hover {
+ background-color:rgb(15, 33, 67) ;
+ color: white;
+}
+/* .container-oradores{
+ margin-left: 2rem;
+ margin-right:2rem;
+ width: 100vmax;
+ height: 50vh;
+
+
+  } */
+
+/* .col{
+  text-align: left;
+  border-color: black;  
+} */
+/* test */
+.container{
+    display:flex;
+    margin-top: 1rem;  
+    width: 100%;
+    height: 100vh;
+}
+footer{
+    background-image: linear-gradient(to right ,rgb(11, 65, 101) ,rgb(88, 175, 234));
+    padding: 1rem;
+   }
+footer{
+   color:white;
+    width: 100%;
     color:white;
-    border-radius: 5px;
-    border-color: transparent;
-    width: 30vh;
+    font-size: x-small;
+    align-items: center;
+    
+
 }

@@ -1,7 +1,30 @@
 // alert("Hello!");
+
 // console.log("Liliana");
+document.getElementById("btn-up").addEventListener("click", scrollUp);
+function scrollUp(){
+    var currentScroll= document.documentElement.scrollTop;
+    // || document.body.scrollTop
+    if(currentScroll > 0){
+        // window.requestAnimationFrame(scrollUp);
+        window.scrollTo(0,0);
+        btnUp.style.transform ="scale(0)";
+    }
+}
+btnUp= document.getElementById("btn-up");
+window.onscroll= function(){
+    var scroll= document.documentElement.scrollTop;
+    if(scroll > 300){
+        btnUp.style.transform = "scale(1)";
+    }else if(scroll < 300){
+
+        btnUp.style.transform ="scale(0)";
+    }
+}
+// const COMENT_LIM=document.getElementById("coment");
 
 // ------------declaración de variables --------------
+
 const PRECIO=200;
 const TEXTO_PAGAR="Total a Pagar: $";
 const BOTON_RESUMEN=document.getElementById("resumen");
@@ -16,6 +39,7 @@ const BOTON_ESTUDIANTE=document.getElementById("categoria");
 var RESULTADO=document.getElementById("pagar");
 var calculo=0;
 var cantidad=0;
+
 
 
 BOTON_RESUMEN.addEventListener("click",() => {
@@ -59,3 +83,4 @@ BOTON_ESTUDIANTE.addEventListener("click",() => {
         return;
     }
     })
+

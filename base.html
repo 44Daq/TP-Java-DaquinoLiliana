@@ -3,43 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" media="only screen and (min-device-width:320px) and (max-device-width: 2048px) " href="estilo.css">
-    <title>Ventas</title>
+    <title>Oradores</title>
 </head>
 <body>
+<header>
+        <div class="txt-Conf">
+            <img class="imagen-logo" src="codoacodo.png" alt="logo" style="width:100px; height:70px; margin-left: 30px;">
+        </div>
+        <h2 style="text-align:left;  margin-left: 30px; margin-top: 20px;">Conf Bs As</h2>
+        <div class="txt  aling-items-right">
+            <!-- <a href="#oradores" >Ver Oradores  </a> -->
+
+            <a  class="inicio" href="index.html">Inicio</a>
+        </div>
+  
+</header>
+    <!-- <div class="ven">
+         <h1>VENTAS</h1>
+    </div> -->
+       
+    
+    <!-- <section  class="container" id="ventas">        
+        <div class="container-venta">
+            <table>
+                <thead>
+                    <tr>
+                       <th>Nombre</th> <th>Apellido</th> <th>DNI</th> <th>Correo</th>
+                </thead>
+                <tr>
+                    <th></th> <th></th> <th></th> <th></th> 
+                </tr>
+                <tr>
+                    <th></th> <th></th> <th></th> <th></th> 
+                </tr>
+                <tr>
+                    <th></th> <th></th> <th></th> <th></th> 
+                </tr>
+                <tr>
+                    <th></th> <th></th> <th></th> <th></th> 
+                </tr>
+              </table> -->
+                 <!-- <div class="col">ID</div>
+                 <div class="col">Nombre</div>
+                 <div class="col">Apellido</div>
+                 <div class="col">Mensaje</div>
+                <button class="btn-editar" ><b>EDITAR</b></button>
+                <button class="btn-borrar" ><b>BORRAR</b></button>
+            </div> -->
+        <!-- </div>
+    </section>         -->
+        
+    <div class="ven">        
+            <h1>ORADORES</h1>
+    </div>        
+    <section  class="container" id="oradores">   
+    <!-- <div class="container-oradores"> -->
+        <table>
+            <thead>
+                <tr>
+                    <th> Nombre</th><th>Apellido</th><th>Mensaje</th>
+            </thead>
+            <tr>
+                <th></th> <th></th> <th></th>
+            </tr>
+            <tr>
+                <th></th> <th></th> <th></th>
+            </tr>
+            <tr>
+                <th></th> <th></th> <th></th>
+            </tr>
+            <tr>
+                <th></th> <th></th> <th></th>
+            </tr>
+            <tr>
+                <th></th> <th></th> <th></th>
+            </tr>
+            <tr>
+                <th></th> <th></th> <th></th>
+            </tr>
+        </table>
+        <!-- </div>   -->
+
+    </section>
+    <br></br>
   
     
-<section  class="container ">        
-
-    <div class="venta" > 
-            <form action="base" method="POST">
-                <!-- <p>DNI</p> -->
-                <label for="dni">Ingrese Dni</label>
-                <input type="number" name="dni" placeholder="DNI" required>
-                <!-- <p>NOMBRE</p> -->
-                <label for="nombre">Ingrese Nombre</label>
-                <input type="text" name="nombre" placeholder="NOMBRE" required>
-                <!-- <p>APELLIDO</p> -->
-                <label for="apellido">Ingrese Apellido</label>
-                <input type="text" name="apellido" placeholder="Apellido" required>
-                <!-- <p>CORREO</p> -->
-                <label for="correo">Ingrese Correo</label>
-                <input type="text" name="correo" placeholder="Correo" required>
-                <!-- <p>CANTIDAD</p>
-                <label for="cantidad">Ingrese Cantidad</label>
-                <input type="number" name="cantidad" placeholder="Cantidad" required>
-                <p>TOTAL</p> -->
-                <!-- <label for="total">Total a pagar</label> -->
-                <!-- <input type="number" name="total" placeholder="Total" required> -->
-    
-              
-            </form>
-            <input type="submit" value="ENVIAR">
-            <!-- <button class="btn-enviar" >Enviar</button>     -->
+<footer class="container-fluid">
+        <div class="pieTxt">
+            <div class="col bg-footer d-flex justify-content-around aling-items-center">
+            <a>Uso Interno</a> 
         </div>
-       
-         
-</div>    
-
+</footer>
+  
 </body>
 </html>
