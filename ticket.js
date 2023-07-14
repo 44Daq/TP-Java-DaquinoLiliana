@@ -21,6 +21,12 @@ window.onscroll= function(){
         btnUp.style.transform ="scale(0)";
     }
 }
+const BOTON_ENVIAR=document.getElementById("botonEnviar");
+BOTON_ENVIAR.addEventListener("click",() => {
+   
+        alert("Datos enviados correctamente");
+        
+    })
 // const COMENT_LIM=document.getElementById("coment");
 
 // ------------declaración de variables --------------

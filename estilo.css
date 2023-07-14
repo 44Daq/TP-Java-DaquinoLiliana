@@ -67,7 +67,7 @@ table{
     background-color: cornflowerblue;
     border-bottom: solid 5px  rgb(15, 33, 67); 
     color: black;
-}
+ }
 tr:nth-child(even){
     background: rgb(147, 179, 239) ;
 
