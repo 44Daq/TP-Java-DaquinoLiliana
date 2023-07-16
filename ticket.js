@@ -90,5 +90,4 @@ BOTON_ESTUDIANTE.addEventListener("click",() => {
     }
     })
 
-fetch
 

@@ -1,3 +1,17 @@
+<?php 
+
+$servidor="localhost";
+$usuario="root";
+$clave="";
+$baseDeDatos="oradores";
+
+ $enlace = mysqli_connect($servidor, $usuario, $clave, $baseDeDatos);
+
+ if(!$enlace){
+    echo"no se pudo conectar";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -12,7 +26,7 @@
      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- <link rel="stylesheet" media="only screen and (min-device-width:320px) and (max-device-width: 2048px) " href="style.css"> -->
 
-    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <link rel="stylesheet" type="text/css" href="estiloLista.css">
 
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->   
 </head>
@@ -32,8 +46,7 @@
   
     </header>
     <div class="tabla">
-        <form action="carga.php" method="POST">
-        
+        <form action="http://localhost/Lista/carga.php" method="POST">
             <table>
                 <thead>
                     <tr>
@@ -41,28 +54,35 @@
                       <th>Apellido</th>
                       <th>Tema</th>
                     </tr>
+                </thead>  
 
-                     <tr>
-                      <th></th>
-                      <th></th>
-                      <th></th>
-                    </tr>
+
+  <?php
+
+   $consulta = "SELECT * FROM  datos";
+
+    $ejecutar = mysqli_query($enlace, $consulta);
+
+    while ($fila = mysqli_fetch_array($ejecutar)){
+
+  ?>
+  <tr>
+    <td><?php echo $fila['nombre']?></td>
+    <td><?php echo $fila['apellido']?></td>
+    <td><?php echo $fila['tema']?></td>
+  </tr>
+<?php
+}
+  ?>
                     
-                    
-          </thead>  
-          <tbody id="tabla_dato"></tbody>
-            </table>    
+       <!--              
+           </thead>   -->
+          <!-- <tbody id="tabla_dato"></tbody> -->
+          </table>    
         </form>    
     </div> 
 
- </body>   
 
-<!-- <footer class="container-fluid">
-        <div class="pieTxt">
-            <div class="col bg-footer d-flex justify-content-around aling-items-center">
-            <a>Derechos Reservados</a> 
-        </div>
-</footer>   -->
-  <script scr="app.js"></script>     
+
 </body>
 </html> 

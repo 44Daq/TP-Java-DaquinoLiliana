@@ -11,9 +11,9 @@ $baseDeDatos="oradores";
     echo"no se pudo conectar";
 }
 
-  // $nombre = $_POST['nombre'];
-  // $apellido = $_POST['apellido'];
-  // $tema = $_POST['tema'];
+  $nombre = $_POST['nombre'];
+  $apellido = $_POST['apellido'];
+  $tema = $_POST['tema'];
  
 
 $cargarDatos = "INSERT INTO datos VALUES ('$nombre', '$apellido', '$tema')";
