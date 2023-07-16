@@ -18,7 +18,17 @@
 </head>
 
 <body>
-    <form action="carga.php" method="POST">
+    <header>
+        <div class="txt-Conf">
+            <img class="imagen-logo" src="codoacodo.png" alt="logo" style="width:100px; height:70px">
+        </div>
+      <div class="txt  aling-items-right">
+        <a  class="inicio" href="index.html">Inicio </a>
+        <a  class="verOradores" href="lista.html">Ver Oradores </a>
+      </div>
+    </header>
+
+    <form action="cargarOradores.php" method="POST">
         <div class="tex-cent" place-items="center" id="orador">CONVIÉRTETE EN UN
          <h3>ORADOR</h3>
          <p>Anótate como orador para dar una <span class="underline"> charla  ignite</span> .Cuéntanos de qué quieres hablar!</p >
@@ -29,14 +39,13 @@
              </div>
              <br>
              <textarea class="coment" name="tema" style="width : 540px; height: 100px" id="coment" required="">Sobre qué quieres hablar?</textarea>
-                <!-- <br></br> -->
-             <!-- <div class="charla" style="font-size: small;"> Recuerda incluir un título para tu charla</div> -->
       
 
          <div class="charla" style="font-size: small;"> Recuerda incluir un título para tu charla</div>
              <input type="submit" name="Enviar">
            </div> 
     </form> 
+  </div>
 
 </body>
 </html> 

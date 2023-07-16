@@ -28,7 +28,8 @@ header {
 .txt a{
  text-decoration: none;
  color: white;
- font-size: small;
+ /* font-size: small; */
+ margin-left: 1rem;
 
 }
 .btn-tic a{
@@ -37,12 +38,21 @@ header {
 }
 .txt {
     text-align:right;
-    font-size: medium;
+    /* font-size: medium; */
     margin-top: 2rem;
     width: 100vh;
 }
 .imagen-logo{
     margin-left:2rem;
+}
+.inicio:hover{
+    color: rgb(13, 138, 11) ;
+}
+.inicio{
+    color:white;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+  
 }
 /* ------------------------------------------------------------------------------- */
 /*---------------------- sección class="container-conf"  --------------------------*/
@@ -67,6 +77,7 @@ header {
 
     /* margin-right: 10px; */
 }
+
 .dos{
     /* margin-right:50px; */
     right:20%;
@@ -81,8 +92,11 @@ header {
     border-color: white;
     background-color: transparent;
     color:white;
-    font-size:large ;
-  
+    font-size:large ; 
+}
+.btn-orador a:hover{
+    color: black;
+
 }
 .btn-orador a{
      text-decoration: none; 
@@ -100,6 +114,9 @@ header {
   
     color:white;
     font-size:large ;
+}
+.btn-tic:hover{
+    background-color: rgb(4, 84, 4);
 }
 
 

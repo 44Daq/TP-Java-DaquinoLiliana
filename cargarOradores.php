@@ -1,10 +1,19 @@
+<?php 
 
-<?php
-  require 'conexion.php';
+$servidor="localhost";
+$usuario="root";
+$clave="";
+$baseDeDatos="oradores";
 
-  $nombre = $_POST['nombre'];
-  $apellido = $_POST['apellido'];
-  $tema = $_POST['tema'];
+ $enlace = mysqli_connect($servidor, $usuario, $clave, $baseDeDatos);
+
+ if(!$enlace){
+    echo"no se pudo conectar";
+}
+
+  // $nombre = $_POST['nombre'];
+  // $apellido = $_POST['apellido'];
+  // $tema = $_POST['tema'];
  
 
 $cargarDatos = "INSERT INTO datos VALUES ('$nombre', '$apellido', '$tema')";
@@ -20,7 +29,9 @@ $ejecutar= mysqli_query($enlace, $cargarDatos);
   		</script>";
  
     	}
-     
+?> 
 
 
-?>     
+
+
+    
