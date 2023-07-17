@@ -1,0 +1,105 @@
+
+body{
+    background-color: gainsboro;
+}
+header {
+    background-color: rgb(92, 88, 88);
+    display: flex;
+    width: 100%;
+    color: white;
+    text-align:right ;
+}
+.h3{
+    text-align:left ;
+    font-size: small;
+    margin-right: 1rem;
+}
+.inicio:hover{
+    color: rgb(13, 138, 11) ;
+}
+.inicio{
+    color:white;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+}
+/*txt-inicio{
+        text-align: left;
+}*/
+.ven{
+    text-align: center;
+}
+/* .ora{
+    text-align: center;
+} */
+.txt a{
+ text-decoration: none;
+ color: white;
+ margin-left: 1rem;
+
+}
+
+.txt {
+    text-align:right;
+    font-size: medium;
+    margin-top: 2rem;
+    width: 90vh;
+}
+
+
+/* .container-venta{
+ margin: 150px auto;
+ width: 600px;
+ 
+} */
+table{
+
+    margin-top: 1rem;
+    background-color: white;
+    text-align: left;
+    width: 90%;
+    border-collapse:collapse ;
+    align-items: center;
+    margin-left: 2rem;
+}
+ th{
+   padding: 10px;
+ }
+td{
+   padding: 8px;
+ }
+ 
+ 
+ thead{
+    background-color: cornflowerblue;
+    border-bottom: solid 5px  rgb(15, 33, 67); 
+    color: black;
+ }
+tr:nth-child(even){
+    background: rgb(147, 179, 239) ;
+
+}
+tr:hover {
+ background-color:rgb(15, 33, 67) ;
+ color: white;
+}
+
+.container{
+    display:flex;
+    margin-top: 1rem;  
+    width: 100%;
+    height: 100vh;
+}
+footer{
+    background-image: linear-gradient(to right ,rgb(11, 65, 101) ,rgb(88, 175, 234));
+    padding: 1rem;
+   }
+footer{
+   color:white;
+    width: 100%;
+    color:white;
+    font-size: x-small;
+    align-items: center;
+    
+
+}

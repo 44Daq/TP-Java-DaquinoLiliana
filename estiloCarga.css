@@ -1,0 +1,139 @@
+body{
+	background-color: rgb(164, 190, 209);
+}
+.tex-cent{
+	position: relative;
+	width: 700px;
+	height: 400px;
+	padding-left: 20px;
+	padding-top: 15px;
+	background-color: #e5dfcd;
+	border-radius: 20px;
+	margin: auto;
+	text-align:center;
+	margin-top: 100px;
+
+}
+
+ .underline{
+    text-decoration: underline dotted;
+}
+
+.coment{
+    color:  rgb(138, 135, 135);
+    font-size: large;
+    width: 80vh;
+}
+
+input[type=submit]{
+	position: relative;
+    margin-top: 15px;
+    background-color: rgb(23, 165, 137);
+    color:white;
+    border-radius: 5px;
+    border-color: transparent;
+    width: 540px;
+    height: 30px;
+    border: 0px;
+}
+/*.submit:hover{
+    background-color: rgb(40, 180, 99 ) ;
+}
+*/
+.btn-volver{
+    margin-top: 15px;
+    margin-left: 15px;
+    background-color: rgb(23, 165, 137);
+    color:white;
+    border-radius: 5px;
+    border-color: transparent;
+    width: 20vh;
+}
+.btn-volver:hover{
+    background-color: rgb(40, 180, 99 ) ;
+}
+
+.tabla{
+	position: relative;
+	width: 700px;
+	height: 400px;
+	padding-left: 20px;
+	padding-top: 15px;
+	background-color: #e5dfcd;
+	border-radius: 20px;
+	margin: auto;
+	text-align:center;
+	margin-top: 100px;
+}
+
+th{
+   padding: 10px;
+  
+ }
+
+thead{
+    background-color: cornflowerblue;
+    border-bottom: solid 5px  rgb(15, 33, 67); 
+    color: black;
+
+
+ }
+tr:nth-child(even){
+    background: rgb(147, 179, 239) ;
+
+}
+tr:hover {
+ background-color:rgb(15, 33, 67) ;
+ color: white;
+}
+header {
+    background-color: rgb(92, 88, 88);
+    display: flex;
+    width: 100%;
+    color: white;
+    text-align:right ;
+}
+.h3{
+    text-align:left ;
+    font-size: small;
+}
+txt a{
+ text-decoration: none;
+ color: white;
+ /* font-size: small; */
+ margin-left: 1rem;
+
+}
+
+.txt {
+    text-align:right;
+    /* font-size: medium; */
+    margin-top: 2rem;
+    width: 100vh;
+}
+.imagen-logo{
+    margin-left:2rem;
+}
+
+.inicio{
+    color:white;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    margin-left: 1rem;
+
+}
+.inicio:hover{
+    color: rgb(13, 138, 11) ;
+}
+.verOradores{
+    color:white;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+     text-decoration: none;
+     margin-left: 1rem;
+
+}
+.verOradores:hover{
+    color: rgb(13, 138, 11) ;
+}
