@@ -8,10 +8,10 @@
 }
 
 body {
-  background: url('/assets/img/ImgInsti2.png') no-repeat; /* BACKGROUND IMAGEN NO REPETIDA */
+ /* background: url('/assets/img/ImgInsti2.png') no-repeat;  BACKGROUND IMAGEN NO REPETIDA */
    background-size: cover; /* IMAGEN ADAPTADO AL CONTENEDOR */
    background-position: center; /* POSICION CENTRADA DE LA IMAGEN DENTRO DEL IMG */
-} */
+} 
 
 
 .box {
@@ -127,6 +127,12 @@ body {
 /* ver barra */
 .menu-toggle:hover {
  background:#097d94;
+}
+#page-top
+{
+   background: url('/assets/insti2.png') no-repeat;
+   background-size: cover; /* IMAGEN ADAPTADO AL CONTENEDOR */
+   background-position: center; /* POSICION CENTRADA DE LA IMAGEN DENTRO DEL IMG */
 }
 
 
