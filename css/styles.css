@@ -379,12 +379,12 @@ select:disabled {
   display: none !important;
 }
 
-button,
+ button,
 [type=button],
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
-}
+} 
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -439,10 +439,11 @@ legend + * {
   height: auto;
 }
 
-[type=search] {
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+ [type=search] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
-}
+} 
 
 /* rtl:raw:
 [type="tel"],
@@ -459,7 +460,8 @@ legend + * {
 ::-webkit-color-swatch-wrapper {
   padding: 0;
 }
-
+/* modifiqueyo */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 ::file-selector-button {
   font: inherit;
   -webkit-appearance: button;
@@ -3238,7 +3240,7 @@ textarea.form-control-lg {
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-item-padding-x: 1rem;
   --bs-dropdown-item-padding-y: 0.25rem;
-  --bs-dropdown-header-color: #6c757d;
+  --bs-dropdown-header-color: #5c544e;
   --bs-dropdown-header-padding-x: 1rem;
   --bs-dropdown-header-padding-y: 0.5rem;
   position: absolute;
@@ -3251,9 +3253,7 @@ textarea.form-control-lg {
   color: var(--bs-dropdown-color);
   text-align: left;
   list-style: none;
-
   background-color: var(--bs-dropdown-bg);
-
   background-clip: padding-box;
   border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
   border-radius: var(--bs-dropdown-border-radius);
@@ -4369,10 +4369,8 @@ textarea.form-control-lg {
   width: 100%;
   padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
   font-size: 1rem;
-
   color: var(--bs-accordion-btn-color);
   text-align: left;
-
   background-color: var(--bs-accordion-btn-bg);
   border: 0;
   border-radius: 0;
@@ -10922,12 +10920,12 @@ html {
 
 .sidebar-nav > .sidebar-brand {
   font-size: 1.2rem;
-  
+
   background-color: #3dd5f3;
   background: rgba(22, 199, 16, 0.1);
 
 /*  */
-  
+
   height: 80px;
   line-height: 50px;
   padding-top: 15px;
@@ -11127,63 +11125,63 @@ footer.footer .social-link:hover {
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }
-.sec 
+.sec
 {
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
-    display: flex;
-    /* justify-content: space-between; */
-    align-items: center;
-    background: #5c544e;
-  
-}
-header
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-/* header .logo
-{
-    position: relative;
-    max-width: 120px;
-} */
+    background: #5c544e;
+    color: #fff;
 
-header ul
+}
+
+header
 {
     position: relative;
-    display: flex;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5c544e;
 }
+
+
 header ul li
-{
+{   
+  align-items: center;
+    display: inline;
     list-style: none;
-}
+} 
 header ul li a
 {
-  display: inline-block;
-  color: #fff;
-  font-weight: 400;
-  margin-left: 30px;
+  display:inline-block;
+  color: #fff; 
+  font-weight: 200;
+  margin: 10px ;
   /* margin-right: 30px; */
   text-decoration: none;
-    text-align: right;
-} 
+    text-align: center;
+    
+}
+header a:hover
+{
+  color: #0dcaf0;
+}
 .sec a:hover
 {
     color:#fff ;
-  
+
 }
 .sec li a:hover
 {
     color:  #0dcaf0;
-  
+
 }
 /* .content  h2
 {
@@ -11194,7 +11192,7 @@ header ul li a
     display: flex;
     justify-content: space-between;
     text-align: center;
-   
+
 } */
 .content h3
 {
@@ -11203,7 +11201,7 @@ header ul li a
     margin-top: 1%;
 
 }
-.content .textBox 
+.content .textBox
 {
     position: relative;
     max-width: 500px;
@@ -11251,15 +11249,25 @@ header ul li a
     max-height: 90%;
 
  }
- .more
+ #more
  {
     margin: 20px 180px;
+    background-color:  #097d94;
  }
- .more:hover a
+ #more:hover 
  {
-    background-color: #097d94;
+    background-color: #fd7e14;
  }
- .sec img  .logo 
+ #more a 
+ {
+  color:#fff;
+ }
+  #more a:hover
+ {
+   color:#000;
+ }
+
+ .sec img  .logo
  {
     align-items: center;
  }
@@ -11267,3 +11275,62 @@ header ul li a
  {
   color: white;
  }
+
+ /* instituto */
+ /* carrusel */
+.carousel-slide-item
+{
+ width: 100%;
+ transition-duration: .2s;
+
+    padding: 2.5rem;
+    /* space: .5rem; */
+}
+#propuesta
+{
+  margin-top: 5%;
+  margin-bottom: 0;
+}
+#datos
+{
+  margin-top: 10%;
+}
+.caption #program
+{
+  background-image: url('https://isfdyt93-bue.infd.edu.ar/sitio/tecnicatura-superior-en-analisis-desarrollo-y-programacion-de-aplicaciones/');
+}
+.map
+{
+  margin-bottom: 5%;
+}
+nav 
+{
+  align-items: center;
+  background-color: #5c544e;
+}
+#more
+{
+ background-color: #fff;
+ border-bottom: #000;
+}
+
+#botonMas
+{
+ background-color: #fff;
+
+
+}
+#botonMas:hover
+{
+ background-color: #097d94;
+
+
+}
+#botonEnviar
+{
+ background-color: #fff;
+}
+#botonEnviar:hover
+{
+ background-color: #5c544e;
+}

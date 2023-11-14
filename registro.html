@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Ingresar</title>
+        <title>Registrarse</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/93.png"/>
         <!-- Font Awesome icons (free version)-->
@@ -15,40 +15,32 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link  rel="stylesheet" href="/css/styles.css">
-        <link  rel="stylesheet" href="/css/styleRegistro.css">
-        <!-- <link  rel="stylesheet" href="/css/estilo.css"> -->
-       
-        
+        <link  rel="stylesheet" href="css/styles.css">
+        <link  rel="stylesheet" href="css/styleRegistro.css">
     </head>
+
     <body id="page-top">
-        <!-- <section class="sec"> -->
+
         <!-- Navigation-->
-       
         <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
         <nav id="sidebar-wrapper">
-            <ul class="sidebar-nav"> 
-                <li class="sidebar-brand"><a href="#page-top"><img src="assets/img/93.png" width="30%" height="120%"> ISFT Nº 93</a></li>
-                <li class="sidebar-nav-item"><a href="index.html">Inicio</a></li>
-                <li class="sidebar-nav-item"><a href="#propuesta">Nuestra Propuesta</a></li>
-                <li class="sidebar-nav-item"><a href="#datos">Datos Institucionales</a></li>
-                <li class="sidebar-nav-item"><a href="#portfolio">Carreras</a></li>
-                <li class="sidebar-nav-item"><a href="#contact">Contacto</a></li>
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand"><a href="#page-top"><img src="/assets/img/93.png" width="30%" height="120%"> ISFT Nº 93</a></li>
+                <li class="sidebar-nav-item"><a href="index.html">Home</a></li>
+                <!-- <li class="sidebar-nav-item"><a href="#about">Inscripción</a></li> -->
+                <!-- <li class="sidebar-nav-item"><a href="#services">Ver</a></li> -->
+                <li class="sidebar-nav-item"><a href="index.html#portfolio">Oferta Académica</a></li>
+                <li class="sidebar-nav-item"><a href="index.html#mensaje">Contacto</a></li>
             </ul>
         </nav>
+
       <div class="d-flex justify-content-center align-items-center vh-100">
+   
+     
         <div class="box d-flex">
-            <!-- <div class="info">
-                <p>Gracias por visitarnos</p>
-                
-                <h1>Bienvenido de nuevo</h1>
-        
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum rem eos, eius molestiae amet eum doloremque facere fuga officiis? Vero ut eius modi commodi soluta perspiciatis facere totam alias fugiat.</p>
-            </div> -->
-            <form action="">
+         
+            <form action="" name="formRegistro">
                 <h1>Ingresar Datos</h1>
-    
-                <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas ex laborum quidem quo deleniti nostrum non porro autem nulla voluptatem est repellendus, rerum vitae esse in repellat! Eos, cupiditate!</p> -->
     
                 <div class="input-box">
                     <input type="text" required>
@@ -60,213 +52,38 @@
                     <span>Apellido</span>
                     <i></i>
                 </div>
-                <div class="input-box">
-                    <input type="number" required>
-                    <span>DNI</span>
-                    <i></i>
-                </div>
+             
                 <div class="input-box">
                     <input type="text" required>
-                    <span>Usuario</span>
+                    <span>Email</span>
                     <i></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" required>
-                    <span>Contraseña</span>
-                    <i></i> 
-                </div>
-                <div class="input-box">
-                    <input type="password" required>
-                    <span>Repetir Contraseña</span>
-                    <i></i> 
-                </div>
-               <div>
-                 <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-primary">
-                        <input type="checkbox" name="" id=""  autocomplete="off">
-                        <span>Aceptar Términos y Condiciones</span>
-                  
-                    </div>
-                    <label class="btn btn-primary">
-                        <input type="checkbox" name="" id="" autocomplete="off">
-                        <span>Aceptar Politicas de Privacidad</span>
-                
-                    
-                </div>
-                <div>
-                    <div>
-                 
-                    <button class="btn-registro"  id="botonRegistro" >Registro</button>
+                 <input type="password" class="form-control border-input" name="npass" id="clave1" size="20" required  />
+                <span id="np">Contraseña</span>
+                 </div>
+                 <div class="input-box">
+                    <input type="password" class="form-control border-input"  name="rnpass" id="clave2" size="20" required />
+                <span id="rnp">Repita Contraseña</span>
+                 </div>
     
-                    </div>
+                <div>
+                    
+                    <button class="btn-registro"  id="botonRegistro" value="Comprobar si son iguales" onclick="ComprobarClave()" >Registro</button>
+                </div>
         
             </form>
         </div>
         
   
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,800;1,800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
- /* ROOT */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* CALCULA EL ALTO Y ANCHO DEL ELEMENTO DEPENDIENTO EL ALTO Y ANCHO DEL HIJO SIN CONTAR MARGIN Y PADDING */
-    font-family: 'Poppins', sans-serif; /* ESTABLECE EL FONT FAMILY DE TODA LA PAGINA */
-}
-
- body {
-  /*  background: url('/assets/img/ImgInsti2.png') no-repeat; /* BACKGROUND IMAGEN NO REPETIDA */
-    background-size: cover; /* IMAGEN ADAPTADO AL CONTENEDOR */
-    background-position: center; /* POSICION CENTRADA DE LA IMAGEN DENTRO DEL IMG */
-} */
-
-
-.box {
-  width: 420px;
-  background: transparent; /* FONDO TRANSPARENTE */
-  border: 2px solid rgba(255, 255, 255, .2); /* BORDE CLARO SEMITRANSPARENTE */
-  backdrop-filter: blur(20px); /* FONDO CON EFECTO DESENFOQUE */
-  box-shadow: 0 0 10px rgba(0, 0, 0, .2); /* SOMBRA OSCURA SEMITRANSPARENTE */
-  color: #fff;
-  border-radius: 10px;
-  padding: 30px 40px;
-}
-
-.box h1 { 
-    font-size: 2em;
-    text-align: center;
-}
-
-.box .input-box { 
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
-}
-
-.box .input-box input {
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-    color: #fff;
-    padding: 20px 45px 20px 20px;
-}
-
-.box .input-box input::placeholder {
-    color: #fff;
-}
-
-.box .input-box i {
-    position: absolute;
-    right: 20px;
-    top: 50%; /* POSICIONA EL ELEMENTO AL 50% DEL PADRE */
-    transform: translateY(-50%); /* MUEVE EL ELEMENT -50% DE SU PROPIO TAMAÑO HACIA ARRIBA */
-    font-size: 1.5em;
-}
-
-.box .remember {
-    font-size: 0.8em;
-    margin: -15px 0 15px;
-}
-
-.box .remember label input {
-    margin-right: 3px;
-    color: #fff;
-}
-
-.box .remember a { 
-    color: #fff;
-    text-decoration: none;
-}
-
-.box button {
-    width: 100%;
-    height: 45px;
-    background: #fff;
-    border: none;
-    outline: none;
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .1); /* SOMBRA DEL ELEMENTO, OSCURO CASI TRANSPARENTE */
-    cursor: pointer;
-    font-size: 1em;
-    color: #333;
-    font-weight: 600;
-    transition: 0.5s; /* CUALQUIER CAMBIO EN EL DISEÑO SE REALIZA EN 0.5 SEGUNDOS EN EFECTO TRANSICION */
-}
-
-.box button:hover {
-    background:#097d94;
-    color: #fff;
-    border: 1px solid #fff;
-}
-
-.box .register {
-    font-size: 0.9em;
-    text-align: center;
-    margin: 20px 0 15px;
-}
-
-.box .register a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
-}
-.menu-toggle {
-  position: fixed;
-  right: 15px;
-  top: 15px;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  color: #fff;
-  background: rgba(52, 58, 64, 0.5);
-  line-height: 50px;
-  z-index: 999;
-}
-.menu-toggle:focus, .menu-toggle:hover {
-  color: #fff;
-}
-
-/* ver barra */
-.menu-toggle:hover {
-  background:#097d94;
-}
-
-
-        </style>
+  
        <!-- Bootstrap core JS-->
            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
            <!-- Core theme JS-->
          
            <script src="js/scripts.js"></script>
+           <script src="/act.js"></script>
   
-        <!-- <script src="/plugins/bootstrap-5.3.1/js/bootstrap.bundle.min.js"></script> -->
     </body>
     </html>
 
-
-
-
-
-<!-- vgdgfxch -->
-
-
-<!-- kjhbhj -->
-
-<!-- nn -->
-
-
-   
-
-<!-- 
-    <script src="/plugins/bootstrap-5.3.1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" 
-   crossorigin="anonymous"></script>   
-    <script src="act.js"></script>
-</body>
-</html> -->

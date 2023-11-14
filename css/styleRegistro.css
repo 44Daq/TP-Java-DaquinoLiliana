@@ -1,194 +1,132 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,800;1,800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
 /* ROOT */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* CALCULA EL ALTO Y ANCHO DEL ELEMENTO DEPENDIENTO EL ALTO Y ANCHO DEL HIJO SIN CONTAR MARGIN Y PADDING */
-    font-family: 'Poppins', sans-serif; /* ESTABLECE EL FONT FAMILY DE TODA LA PAGINA */
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; /* CALCULA EL ALTO Y ANCHO DEL ELEMENTO DEPENDIENTO EL ALTO Y ANCHO DEL HIJO SIN CONTAR MARGIN Y PADDING */
+   font-family: 'Poppins', sans-serif; /* ESTABLECE EL FONT FAMILY DE TODA LA PAGINA */
 }
 
 body {
-    background: #e5ecf9; /* BACKGROUND IMAGEN NO REPETIDA */
-    background-size: cover; /* IMAGEN ADAPTADO AL CONTENEDOR */
-    background-position: center; /* POSICION CENTRADA DE LA IMAGEN DENTRO DEL IMG */
-}
+  background: url('/assets/img/ImgInsti2.png') no-repeat; /* BACKGROUND IMAGEN NO REPETIDA */
+   background-size: cover; /* IMAGEN ADAPTADO AL CONTENEDOR */
+   background-position: center; /* POSICION CENTRADA DE LA IMAGEN DENTRO DEL IMG */
+} */
+
 
 .box {
-  width: 600px;
-  height: 600px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, .4);
-  border-radius: 20px;
-  background: #fff;
-  backdrop-filter: blur(20px);
+ width: 420px;
+ background: transparent; /* FONDO TRANSPARENTE */
+ border: 2px solid rgba(255, 255, 255, .2); /* BORDE CLARO SEMITRANSPARENTE */
+ backdrop-filter: blur(20px); /* FONDO CON EFECTO DESENFOQUE */
+ box-shadow: 0 0 10px rgba(0, 0, 0, .2); /* SOMBRA OSCURA SEMITRANSPARENTE */
+ color: #fff;
+ border-radius: 10px;
+ padding: 30px 40px;
 }
 
-.box .info {
-    background: url('/images/world.jpg') no-repeat;
-    background-size: initial;
-    background-position: top;
-    border-radius: 20px 0 0 20px;
-    padding: 150px 50px;
-    flex: 1;
-    text-align: center;
-    color: #fff;
-}
-
-.box .info h1 { 
- font-size: 2em;
-}
-
-.box form h1 {
-    font-weight: 50;
-    font-size: 2em;
-    text-align: center;
-    letter-spacing: 0.1em;
-    color: rgb(19, 133, 226);
-}
-
-.box form {
-    flex: 1;
-    padding: 50px 40px;
+.box h1 { 
+   font-size: 2em;
+   text-align: center;
 }
 
 .box .input-box { 
-    position: relative;
-    width: 100%;
-    margin-top: 5px;
+   position: relative;
+   width: 100%;
+   height: 50px;
+   margin: 30px 0;
 }
 
 .box .input-box input {
-    position: relative;
-    width: 100%;
-    padding: 20px 10px 10px;
-    background: transparent;
-    border: none; /* SE QUITAN LOS BORDES */
-    outline: none; /* SE QUITA EL CONTORNO */
-    box-shadow: none; /* SE QUITAN LAS SOMBRAS */
-    color: #23242a;
-    font-size: 1em;
-    letter-spacing: 0.05em; /* SE ESTABLECE EL ESPACIO ENTRE LAS LETRAS A 0.05em */
-    transition: 0.5s;
-    z-index: 10; /* ESTABLECE LA POSICION DEL ELEMENTO EN EL PLANO Z A 10 LO QUE HACE QUE ESTE EN FRENTE DE OTROS ELEMENTOS */
+   width: 100%;
+   height: 100%;
+   background: transparent;
+   border: none;
+   outline: none;
+   border: 2px solid rgba(255, 255, 255, .2);
+   border-radius: 40px;
+   color: #fff;
+   padding: 20px 45px 20px 20px;
 }
 
-.box .input-box span {
-    position: absolute;
-    left: 0;
-    padding: 20px 10px 10px;
-    pointer-events: none;
-    color: #8f8f8f;
-    font-size: 1em;
-    letter-spacing: 0.05em;
-    transition: 0.5s;
-}
-
-/* 
-    input:valid - SE ACTIVA CUANDO EXISTEN DATOS EN EL INPUT
-    input:focus - SE ACTIVA CUANDO ESTA EL CURSOR EN EL INPUT
-    ~ span - PERMITE MODIFICAR EL ESTILO DE UN ELEMENTO HERMANO
-*/
-.box .input-box input:valid ~ span,
-.box .input-box input:focus ~ span{
-    color: rgb(19, 133, 226);
-    font-size: 0.75em;
-    transform: translateY(-34px) /* SE MUEVE LA POSICION DEL OBJETO 34px ARRIBA */;
+.box .input-box input::placeholder {
+   color: #fff;
 }
 
 .box .input-box i {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 2px;
-    background: rgb(19, 133, 226);
-    border-radius: 4px;
-    overflow: hidden; /* OCULTA CUALQUIER CONTENIDO QUE SOBRESALGA DEL ALTO Y ANCHO DEL ELEMENTO */
-    transition: 0.5s;
-    pointer-events: none /* QUITA LA INTERACCION CON EL MOUSE */;
+   position: absolute;
+   right: 20px;
+   top: 50%; /* POSICIONA EL ELEMENTO AL 50% DEL PADRE */
+   transform: translateY(-50%); /* MUEVE EL ELEMENT -50% DE SU PROPIO TAMAÑO HACIA ARRIBA */
+   font-size: 1.5em;
 }
 
-.box .input-box input:valid ~ i,
-.box .input-box input:focus ~ i {
-    height: 45px;
+.box .remember {
+   font-size: 0.8em;
+   margin: -15px 0 15px;
 }
 
-.box .remember a {
-    margin: 20px 0;
-    font-size: 1em;
-    color: #8f8f8f;
-    text-decoration: none;
+.box .remember label input {
+   margin-right: 3px;
+   color: #fff;
 }
 
-/* 
-  a:nth-child(2) - PERMITE MODIFICAR EL ESTILO DE UN ELEMENTO ESPECIFICO DENTRO DE UNA LISTA DE ELEMENTOS
-  <a href="#"> Recuperar Contrasena </a>
-  <a href="#"> Registrarse </a>  <--- ESTE ELEMENTO CAMBIA
-*/
-.box .remember a:hover,
-.box .remember a:nth-child(2){
-    color:rgb(19, 133, 226);
+.box .remember a { 
+   color: #fff;
+   text-decoration: none;
 }
 
-/* 
-  input[type="submit"] - PERMITE MODIFICAR EL ESTILO DE UN ELEMENTO CON UN ATRIBUTO ESPECIFICO 
-  <input type="submit">
-*/
-/* .box form input[type="submit"] {
-    width: 100%;
-    height: 45px;
-    background:rgb(19, 133, 226);
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
-    color: #fff;
-    margin-top: 10px;
-    font-weight: 600;
-    transition: 0.5s;
+.box button {
+   width: 100%;
+   height: 45px;
+   background: #fff;
+   border: none;
+   outline: none;
+   border-radius: 40px;
+   box-shadow: 0 0 10px rgba(0, 0, 0, .1); /* SOMBRA DEL ELEMENTO, OSCURO CASI TRANSPARENTE */
+   cursor: pointer;
+   font-size: 1em;
+   color: #333;
+   font-weight: 600;
+   transition: 0.5s; /* CUALQUIER CAMBIO EN EL DISEÑO SE REALIZA EN 0.5 SEGUNDOS EN EFECTO TRANSICION */
 }
 
-.box form input[type="submit"]:hover {
-    background: rgb(2, 65, 117);
-    color: #fff;
-    border: none;
-} */
+.box button:hover {
+   background:#097d94;
+   color: #fff;
+   border: 1px solid #fff;
+}
 
-.btn-primary{
-    background-color:rgb(200, 210, 210);
-    border-radius: 5px;
-    font-size: x-small;
-    color: rgb(11, 0, 0);
-    border-color: black;
-    margin: 10px 25px;
-    
-   
+.box .register {
+   font-size: 0.9em;
+   text-align: center;
+   margin: 20px 0 15px;
 }
-.btn-primary:hover
-{
-    color:rgb(250, 249, 246);
-    background-color:rgb(78, 77, 77);
-    border-color:rgb(78, 77, 77) ;
+
+.box .register a {
+   color: #fff;
+   text-decoration: none;
+   font-weight: 600;
 }
-.btn-registro, 
-.btn-ingresar{
-    width: 100%;
-    height: 45px;
-    background:rgb(19, 133, 226);
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1em;
-    color: #fff;
-    margin-top: 10px;
-    font-weight: 600;
-    transition: 0.5s;
+.menu-toggle {
+ position: fixed;
+ right: 15px;
+ top: 15px;
+ width: 50px;
+ height: 50px;
+ text-align: center;
+ color: #fff;
+ background: rgba(52, 58, 64, 0.5);
+ line-height: 50px;
+ z-index: 999;
 }
-.btn-registro:hover,
-.btn-ingresar:hover {
-    background: rgb(2, 65, 117);
-    color: #fff;
-    border: none;
+.menu-toggle:focus, .menu-toggle:hover {
+ color: #fff;
 }
+
+/* ver barra */
+.menu-toggle:hover {
+ background:#097d94;
+}
+
+
